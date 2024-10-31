@@ -120,21 +120,17 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 VireX agency, All Rights Reserved
+					© 2024 VIREX Agency, All Rights Reserved
 				</Text>
-				<Flex
-					gap="12">
+
+				<Flex>
 					<Button
 						href="https://github.com/once-ui-system/nextjs-starter"
-						prefixIcon="github" size="s" variant="tertiary">
+						prefixIcon="instagram" size="s" variant="tertiary">
 						GitHub
 					</Button>
-					<Button
-						href="https://discord.com/invite/5EyAQ4eNdS"
-						prefixIcon="discord" size="s" variant="tertiary">
-						Discord
-					</Button>
 				</Flex>
+				
 			</Flex>
 		</Flex>
 	);
