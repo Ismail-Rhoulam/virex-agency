@@ -137,7 +137,7 @@ export default function Home() {
 						href="https://wa.me/+212603915218?text=Hey"
 						prefixIcon="whatsapp" size="s" variant="tertiary">
 						Whatsapp
-					</button>
+					</Button>
 				</Flex>
 
 			</Flex>
