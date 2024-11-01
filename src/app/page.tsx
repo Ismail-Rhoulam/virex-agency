@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { FaInstagram } from "react-icons/fa";
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 import Link from 'next/link';
 
@@ -135,7 +134,7 @@ export default function Home() {
 					</Button>
 
 					<button
-						href=""
+						href="https://wa.me/+212603915218?text=Hey"
 						prefixIcon="whatsapp" size="s" variant="tertiary">
 						Whatsapp
 					</button>
