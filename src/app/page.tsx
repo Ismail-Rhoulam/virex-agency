@@ -65,26 +65,33 @@ export default function Home() {
 				</Flex>
 			</Flex>
 
-			<Flex as="footer"
+			<Flex 
+				as="footer"
 				position="relative"
-				fillWidth paddingX="l" paddingY="m"
-				justifyContent="space-between">
+				fillWidth padding="8"
+				justifyContent="center">
 				
-				<Text
-					variant="body-default-s" onBackground="neutral-weak">
-					© {currentYear} VIREX Agency, All Rights Reserved
-				</Text>
-
 				<Flex
-					gap="24"
-					paddingY="s">
-					<IconButton
-						href={ig} tooltip="Instagram" tooltipPosition="top"
-						icon="instagram" size="m" variant="tertiary"/>
+                fillWidth maxWidth="m" paddingY="8" paddingX="16"
+                justifyContent="space-between" alignItems="center">
 
-					<IconButton
-						href={wtsp} tooltip="Whatsapp" tooltipPosition="top"		
-						icon="whatsapp" size="m" variant="tertiary"/>
+					<Text
+						variant="body-default-s" onBackground="neutral-weak">
+						© {currentYear} VIREX Agency, All Rights Reserved
+					</Text>
+
+					<Flex
+						gap="24"
+						paddingY="s">
+						<IconButton
+							href={ig} tooltip="Instagram" tooltipPosition="top"
+							icon="instagram" size="m" variant="tertiary"/>
+
+						<IconButton
+							href={wtsp} tooltip="Whatsapp" tooltipPosition="top"		
+							icon="whatsapp" size="m" variant="tertiary"/>
+					</Flex>
+					
 				</Flex>
 
 			</Flex> {/* footer */}
