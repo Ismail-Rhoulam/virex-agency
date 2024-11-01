@@ -71,20 +71,20 @@ export default function Home() {
 				justifyContent="space-between">
 				
 				<Text
-					paddingY="s"
 					variant="body-default-s" onBackground="neutral-weak">
 					© {currentYear} VIREX Agency, All Rights Reserved
 				</Text>
 
 				<Flex
-					gap="24">
+					gap="24"
+					paddingY="s">
 					<IconButton
 						href={ig} tooltip="Instagram" tooltipPosition="top"
-						icon="instagram" size="s" variant="tertiary"/>
+						icon="instagram" size="m" variant="tertiary"/>
 
 					<IconButton
 						href={wtsp} tooltip="Whatsapp" tooltipPosition="top"		
-						icon="whatsapp" size="s" variant="tertiary"/>
+						icon="whatsapp" size="m" variant="tertiary"/>
 				</Flex>
 
 			</Flex> {/* footer */}
