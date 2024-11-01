@@ -133,7 +133,7 @@ export default function Home() {
 						Instagram
 					</Button>
 
-					<button
+					<Button
 						href="https://wa.me/+212603915218?text=Hey"
 						prefixIcon="whatsapp" size="s" variant="tertiary">
 						Whatsapp
