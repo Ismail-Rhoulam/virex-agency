@@ -128,7 +128,7 @@ export default function Home() {
 				<Flex
 					gap="24" paddingY="m">
 					<Button
-						href="https://github.com/once-ui-system/nextjs-starter"
+						href="https://www.instagram.com/virex_agency/"
 						prefixIcon="instagram" size="s" variant="tertiary">
 						Instagram
 					</Button>
