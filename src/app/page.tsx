@@ -1,11 +1,14 @@
 "use client";
 
 import React from 'react';
-
+import { FaInstagram } from "react-icons/fa";
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 import Link from 'next/link';
 
 export default function Home() {
+
+	const currentYear = new Date().getFullYear();
+	
 	const links = [
 		{
 			href: "https://once-ui.com/docs/theming",
@@ -120,14 +123,14 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 VIREX Agency, All Rights Reserved
+					© {currentYear} VIREX Agency, All Rights Reserved
 				</Text>
 
 				<Flex>
 					<Button
 						href="https://github.com/once-ui-system/nextjs-starter"
-						prefixIcon="Instagram" size="s" variant="tertiary">
-						GitHub
+						prefixIcon="FaInstagram" size="s" variant="tertiary">
+						Instagram
 					</Button>
 				</Flex>
 
