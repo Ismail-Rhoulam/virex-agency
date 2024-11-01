@@ -129,7 +129,7 @@ export default function Home() {
 				<Flex>
 					<Button
 						href="https://github.com/once-ui-system/nextjs-starter"
-						prefixIcon="FaInstagram" size="s" variant="tertiary">
+						prefixIcon="instagram" size="s" variant="tertiary">
 						Instagram
 					</Button>
 				</Flex>
