@@ -42,7 +42,7 @@ export default function Home() {
 									width: 'fit-content',
 									padding: 'var(--static-space-8) var(--static-space-16)',
 									backdropFilter: 'blur(var(--static-space-1))'}}>
-								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
+								Start by Building Connections, <span className="brand-on-background-medium">Finish with Lasting Impressions.</span>
 							</InlineCode>
 							<Heading
 								wrap="balance"
@@ -50,15 +50,15 @@ export default function Home() {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Helping designers code and developers design
+										Helping Brands Tell Stories and Stories Build Brands.
 									</LetterFx>
 								</span>
 							</Heading>
 							<Button
-								href="https://once-ui.com/docs"
+								href={wtsp}
 								suffixIcon="chevronRight"
 								variant="secondary">
-								Read docs
+								Book an appointment 
 							</Button>
 						</Flex>
 					</Flex>
