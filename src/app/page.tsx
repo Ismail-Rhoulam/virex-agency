@@ -1,11 +1,13 @@
 "use client";
 
 import React from 'react';
-import { Heading, Text, Flex, Button, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
+import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 
 export default function Home() {
 
 	const currentYear = new Date().getFullYear();
+	const wtsp = "https://wa.me/+212603915218?text=Hey"
+	const ig = "https://www.instagram.com/virex_agency/"
 
 	return (
 		<Flex
@@ -76,17 +78,15 @@ export default function Home() {
 
 				<Flex
 					gap="24">
-					<Button
-						href="https://www.instagram.com/virex_agency/"
-						prefixIcon="instagram" size="s" variant="tertiary">
-					</Button>
+					<IconButton
+						href={ig} tooltip="Instagram" tooltipPosition="top"
+						icon="instagram" size="s" variant="tertiary"/>
 
-					<Button
-						href="https://wa.me/+212603915218?text=Hey"
-						prefixIcon="whatsapp" size="s" variant="tertiary">
-					</Button>
+					<IconButton
+						href={wtsp} tooltip="Whatsapp" tooltipPosition="top"		
+						icon="whatsapp" size="s" variant="tertiary"/>
 				</Flex>
-				
+
 			</Flex> {/* footer */}
 
 		</Flex>
