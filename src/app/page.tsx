@@ -72,7 +72,7 @@ export default function Home() {
 				justifyContent="center">
 				
 				<Flex
-                fillWidth maxWidth="m" paddingY="8" paddingX="16"
+                fillWidth maxWidth="m" paddingY="4" paddingX="16"
                 justifyContent="space-between" alignItems="center">
 
 					<Text
