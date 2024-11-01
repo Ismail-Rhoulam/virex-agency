@@ -119,19 +119,26 @@ export default function Home() {
 			<Flex
 				as="footer"
 				position="relative"
-				fillWidth paddingX="l" paddingY="m"
+				fillWidth paddingX="l"
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
 					© {currentYear} VIREX Agency, All Rights Reserved
 				</Text>
 
-				<Flex>
+				<Flex
+					gap="24" paddingY="m">
 					<Button
 						href="https://github.com/once-ui-system/nextjs-starter"
 						prefixIcon="instagram" size="s" variant="tertiary">
 						Instagram
 					</Button>
+
+					<button
+						href=""
+						prefixIcon="whatsapp" size="s" variant="tertiary">
+						Whatsapp
+					</button>
 				</Flex>
 
 			</Flex>
