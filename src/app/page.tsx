@@ -119,7 +119,7 @@ export default function Home() {
 			<Flex
 				as="footer"
 				position="relative"
-				fillWidth paddingX="s" paddingY="m"
+				fillWidth paddingX="l" paddingY="m"
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
