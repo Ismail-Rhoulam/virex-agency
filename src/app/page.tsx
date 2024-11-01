@@ -85,11 +85,11 @@ export default function Home() {
 						paddingY="s">
 						<IconButton
 							href={ig} tooltip="Instagram" tooltipPosition="top"
-							icon="instagram" size="m" variant="tertiary"/>
+							icon="instagram" size="s" variant="tertiary"/>
 
 						<IconButton
 							href={wtsp} tooltip="Whatsapp" tooltipPosition="top"		
-							icon="whatsapp" size="m" variant="tertiary"/>
+							icon="whatsapp" size="s" variant="tertiary"/>
 					</Flex>
 					
 				</Flex>
