@@ -21,7 +21,7 @@ import {
 import {
 	FaDiscord,
 	FaGithub,
-	FaInstagram
+	FaInstagram,
 	FaWhatsapp
 } from "react-icons/fa6";
 
