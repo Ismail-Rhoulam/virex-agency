@@ -118,7 +118,7 @@ export default function Home() {
 			<Flex
 				as="footer"
 				position="relative"
-				fillWidth paddingX="l"
+				fillWidth paddingX="l" paddingY="m"
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
@@ -126,7 +126,7 @@ export default function Home() {
 				</Text>
 
 				<Flex
-					gap="24" paddingY="m">
+					gap="24">
 					<Button
 						href="https://www.instagram.com/virex_agency/"
 						prefixIcon="instagram" size="s" variant="tertiary">
