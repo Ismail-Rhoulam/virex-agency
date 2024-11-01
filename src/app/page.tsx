@@ -1,30 +1,11 @@
 "use client";
 
 import React from 'react';
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
-import Link from 'next/link';
+import { Heading, Text, Flex, Button, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 
 export default function Home() {
 
 	const currentYear = new Date().getFullYear();
-	
-	const links = [
-		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
-		},
-		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
-		},
-		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
-		},
-	];
 
 	return (
 		<Flex
@@ -79,48 +60,16 @@ export default function Home() {
 							</Button>
 						</Flex>
 					</Flex>
-					<Grid
-						radius="l"
-						border="neutral-medium"
-						borderStyle="solid-1"
-						columns="repeat(3, 1fr)"
-						tabletColumns="1col"
-						mobileColumns="1col"
-						fillWidth>
-						{links.map((link) => (
-							<Link
-								target="_blank"
-								style={{ padding: 'var(--responsive-space-l)' }}
-								key={link.href}
-								href={link.href}>
-								<Flex
-									fillWidth paddingY="8" gap="8"
-									direction="column">
-									<Flex
-										fillWidth gap="12"
-										alignItems="center">
-										<Text
-											variant="body-strong-m" onBackground="neutral-strong">
-											{link.title}
-										</Text>
-										<Icon size="s" name="arrowUpRight" />
-									</Flex>
-									<Text
-										variant="body-default-s" onBackground="neutral-weak">
-										{link.description}
-									</Text>
-								</Flex>
-							</Link>
-						))}
-					</Grid>
 				</Flex>
 			</Flex>
-			<Flex
-				as="footer"
+
+			<Flex as="footer"
 				position="relative"
 				fillWidth paddingX="l" paddingY="m"
 				justifyContent="space-between">
+				
 				<Text
+					paddingY="s"
 					variant="body-default-s" onBackground="neutral-weak">
 					© {currentYear} VIREX Agency, All Rights Reserved
 				</Text>
@@ -130,17 +79,16 @@ export default function Home() {
 					<Button
 						href="https://www.instagram.com/virex_agency/"
 						prefixIcon="instagram" size="s" variant="tertiary">
-						Instagram
 					</Button>
 
 					<Button
 						href="https://wa.me/+212603915218?text=Hey"
 						prefixIcon="whatsapp" size="s" variant="tertiary">
-						Whatsapp
 					</Button>
 				</Flex>
+				
+			</Flex> {/* footer */}
 
-			</Flex>
 		</Flex>
 	);
 }
