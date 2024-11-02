@@ -80,4 +80,4 @@ const RandomTextEffect = ({ text, iterations = 10, timeout = 50 }) => {
   return <span ref={textRef}>{text}</span>; // This will display the text
 };
 
-export default RandomTextEffect;
+export { RandomTextEffect };
