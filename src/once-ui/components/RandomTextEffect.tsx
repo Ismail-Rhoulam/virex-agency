@@ -1,4 +1,5 @@
-// components/RandomTextEffect.js
+'use client';
+
 import { useEffect, useRef } from 'react';
 
 const resolver = {
