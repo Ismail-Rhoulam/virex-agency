@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
+import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, RandomTextEffect } from '@/once-ui/components';
 
 export default function Home() {
 
@@ -48,10 +48,10 @@ export default function Home() {
 								wrap="balance"
 								variant="display-strong-s">
 								<span className="font-code">
-									<LetterFx
+									<RandomTextEffect
 										trigger="instant">
 										Helping Brands Tell Stories and Stories Build Brands.
-									</LetterFx>
+									</RandomTextEffect>
 								</span>
 							</Heading>
 							<Button
