@@ -1,11 +1,11 @@
 // components/RandomTextEffect.js
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const resolver = {
   resolve: function resolve(options, callback) {
     const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
     const combinedOptions = { ...options, resolveString };
-    
+
     function getRandomInteger(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -54,49 +54,29 @@ const resolver = {
   }
 };
 
-const strings = [
-  'Oh thank god, you\'re alright.',
-  'You know, being Caroline taught me a valuable lesson. I thought you were my greatest enemy. When all along you were my best friend.',
-  'The surge of emotion that shot through me when I saved your life taught me an even more valuable lesson: where Caroline lives in my brain.',
-  'Goodbye, Caroline.',
-  'You know, deleting Caroline just now taught me a valuable lesson. The best solution to a problem is usually the easiest one. And I\'ll be honest.',
-  'Killing you? Is hard.',
-  'You know what my days used to be like? I just tested. Nobody murdered me. Or put me in a potato. Or fed me to birds. I had a pretty good life.',
-  'And then you showed up. You dangerous, mute lunatic. So you know what?',
-  'You win.',
-  'Just go.',
-  'It\'s been fun. Don\'t come back.',
-  '......'
-];
+const RandomTextEffect = ({ text, iterations = 10, timeout = 50 }) => {
+  const textRef = useRef(null);
 
-const RandomTextEffect = ({ targetElement }) => {
   useEffect(() => {
-    let counter = 0;
-
     const options = {
       offset: 0,
-      timeout: 50, // Adjust the speed of randomization
-      iterations: 10,
+      timeout,
+      iterations,
       characters: 'abcdefghijklmnopqrstuvwxyz#%&-_+?/=',
-      resolveString: strings[counter],
-      element: targetElement,
+      resolveString: text,
+      element: textRef.current,
     };
 
     function callback() {
       setTimeout(() => {
-        counter++;
-        if (counter >= strings.length) {
-          counter = 0;
-        }
-        const nextOptions = { ...options, resolveString: strings[counter] };
-        resolver.resolve(nextOptions, callback);
-      }, 1000);
+        resolver.resolve({ ...options, resolveString: text }, callback);
+      }, 1000); // Delay before starting over
     }
 
     resolver.resolve(options, callback);
-  }, [targetElement]);
+  }, [text, iterations, timeout]);
 
-  return null; // This component does not render anything itself
+  return <span ref={textRef}>{text}</span>; // This will display the text
 };
 
 export default RandomTextEffect;
