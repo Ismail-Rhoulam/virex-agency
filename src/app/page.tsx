@@ -14,7 +14,7 @@ export default function Home() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false} shootingStars={true}"/>
+				dots={false} lines={false} shootingStars={true}/>
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
@@ -30,7 +30,7 @@ export default function Home() {
 						<Flex
 							position="relative"
 							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}}/>
+							<Logo size="l" icon={false} style={{zIndex: '1'}}/>
 						</Flex>
 						<Flex
 							position="relative"
