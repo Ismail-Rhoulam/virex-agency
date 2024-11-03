@@ -14,7 +14,7 @@ export default function Home() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false} lines={false} shootingStars={true}/>
+				dots={false} lines={false}/>
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
