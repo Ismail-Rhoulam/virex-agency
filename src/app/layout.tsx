@@ -4,6 +4,7 @@ import "@/once-ui/tokens/index.scss";
 import { Flex } from '@/once-ui/components'
 import classNames from 'classnames';
 import { Inter } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/react"
 import { Source_Code_Pro } from 'next/font/google';
 
 const primary = Inter({
@@ -58,6 +59,7 @@ export default function RootLayout({
 				<Flex
 					flex={1} direction="column">
 					{children}
+					<Analytics />
 				</Flex>
 			</Flex>
 		</Flex>
