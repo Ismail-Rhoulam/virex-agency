@@ -1,9 +1,9 @@
-# **Once UI for Next.js**
+# **![Once UI](public/trademark/type-dark.svg)<br><br>**
 
-<span style="font-size: 22px;">Once UI is a lightweight, versatile design system intended to cover 80% of the needs of all applications.
+<span style="font-size: 22px;">VIREX Agency is a versitile agency that combines marketing, production and communication expertise, creating dynamic and adaptable solutions that resonate with your audience. No matter your industry or vision, VIREX is equipped to implify your voice and craft stories that make a lasting impression.</span>
 <br>
+<!-- 
 
-![Once UI](public/images/cover.png)
 
 <span style="font-size: 18px;">Start building your Next.js app in minutes with:</span> 
 * **A robust token and style system** that simplifies customization and ensures consistency. 
@@ -45,4 +45,4 @@ Grab a copy from the [Figma Community](https://figma.com/).
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/76DR9Q?referralCode=QW2HBC)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fnextjs-starter&redirect-url=https%3A%2F%2Fonce-ui.com%2Fdocs%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fnextjs-starter&redirect-url=https%3A%2F%2Fonce-ui.com%2Fdocs%2F) -->
