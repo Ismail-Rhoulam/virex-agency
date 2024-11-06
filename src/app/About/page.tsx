@@ -1,18 +1,17 @@
-
 "use client";
 
-import React from "react";
-import { Flex, Text } from "@/once-ui/components";
+import React from 'react';
+import { Flex, Text } from '@/once-ui/components';
 
 
-export default function About() {
-    
-    const teext = "HAHAHA";
+export default function Work() {
+
+    const teext = "HAHAHA"
 
     return (
         <Flex>
             <Text>
-                {teext}
+      å√          {teext}
             </Text>
 
         </Flex>

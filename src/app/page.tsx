@@ -1,11 +1,10 @@
 "use client";
 
 import React from 'react';
-import { Heading, Flex, Button, InlineCode, Logo, LetterFx, Badge } from '@/once-ui/components';
+import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/once-ui/components';
 
 export default function Home() {
 
-	const currentYear = new Date().getFullYear();
 	const wtsp = "https://wa.me/+212663037739"
 
 	return (
