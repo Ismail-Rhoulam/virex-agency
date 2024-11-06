@@ -4,9 +4,9 @@ import "@/once-ui/tokens/index.scss";
 import classNames from 'classnames';
 import { Footer } from "@/components";
 import { Inter } from 'next/font/google';
-import { Flex } from '@/once-ui/components';
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
+import { Flex, Background} from '@/once-ui/components';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const primary = Inter({
@@ -55,17 +55,27 @@ export default function RootLayout({
 				tertiary ? tertiary.variable : '',
 				code.variable,
 				'root')}>
-			<Flex
+
+			<Flex style={{minHeight: '100vh'}}
 				as="body"
+				direction="column"
 				fillWidth fillHeight margin="0" padding="0">
+				
+				<Background
+						gradient={true}
+						dots={true}
+						lines={true}/>
+
 				<Flex
 					flex={1} direction="column">
 					{children}
 					<Analytics />
 					<SpeedInsights />
 				</Flex>
+
 				<Footer />
-			</Flex>
+
+			</Flex> {/* body */}
 		</Flex>
 	);
 }
