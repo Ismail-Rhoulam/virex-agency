@@ -3,13 +3,12 @@ import "@/once-ui/tokens/index.scss";
 
 import classNames from 'classnames';
 import { Footer } from "@/components";
-import { Inter } from 'next/font/google';
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 import { Flex, Background} from '@/once-ui/components';
+import { Sora, Raleway, Work_Sans } from "next/font/google"
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { Sora, Raleway } from "next/font/google"
 
 const primary = Raleway({
     variable: '--font-primary',
@@ -23,7 +22,11 @@ const secondary = Sora({
     display: 'swap'
 });
 
-const tertiary: FontConfig | undefined = undefined;
+const tertiary = Work_Sans({
+    variable: '--font-tertiary',
+    subsets: ['latin'],
+    display: 'swap'
+});
 
 type FontConfig = {
     variable: string;
@@ -48,18 +51,18 @@ export default function RootLayout({
 			data-brand="blue"
 			data-accent="orange"
 			data-neutral="slate"
-			data-border="conservative"
+			data-border="playful"
 			data-solid="contrast"
 			data-solid-style="flat"
 			data-surface="translucent"
 			data-transition="all"
 			className={classNames(
 				primary.variable,
-				secondary ? secondary.variable : '',
-				tertiary ? tertiary.variable : '',
+				secondary.variable,
+				tertiary.variable,
 				code.variable,
 				'root')}>
-{/* style={{minHeight: '100vh'}} */}
+					
 			<Flex 
 				as="body"
 				direction="column"
