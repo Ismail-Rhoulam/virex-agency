@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import { Flex } from '@/once-ui/components';
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
+import { Footer } from "@/components";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const primary = Inter({
@@ -64,6 +65,7 @@ export default function RootLayout({
 					<SpeedInsights />
 				</Flex>
 			</Flex>
+			<Footer />
 		</Flex>
 	);
 }
