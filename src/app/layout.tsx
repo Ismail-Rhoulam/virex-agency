@@ -1,11 +1,12 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
-import { Flex } from '@/once-ui/components'
 import classNames from 'classnames';
-import { Inter } from 'next/font/google'
-import { Analytics } from "@vercel/analytics/react"
+import { Inter } from 'next/font/google';
+import { Flex } from '@/once-ui/components';
 import { Source_Code_Pro } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const primary = Inter({
 	variable: '--font-primary',
@@ -60,6 +61,7 @@ export default function RootLayout({
 					flex={1} direction="column">
 					{children}
 					<Analytics />
+					<SpeedInsights />
 				</Flex>
 			</Flex>
 		</Flex>
