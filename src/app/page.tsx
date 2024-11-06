@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
+import { Heading, Flex, Button, InlineCode, Logo, LetterFx, Badge } from '@/once-ui/components';
 
 export default function Home() {
 
@@ -51,12 +51,12 @@ export default function Home() {
 									</LetterFx>
 								</span>
 							</Heading>
-							<Button
-								href={wtsp}
-								suffixIcon="chevronRight"
-								variant="secondary">
+							<Badge
+								arrow
+								effect
+								href={wtsp}>
 								Book an appointment 
-							</Button>
+							</Badge>
 						</Flex>
 					</Flex>
 				</Flex>
