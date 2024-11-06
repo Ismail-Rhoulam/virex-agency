@@ -1,6 +1,6 @@
 .badge {
     border: 1px solid var(--brand-alpha-medium);
-    opacity: 0;
+    background: opacity($color: #000000);
 }
 
 .animation {
