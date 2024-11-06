@@ -69,6 +69,7 @@ export default function RootLayout({
 				fillWidth fillHeight margin="0" padding="0">
 				
 				<Background
+						mask="cursor"
 						gradient={true}
 						dots={true}
 						lines={true}/>
