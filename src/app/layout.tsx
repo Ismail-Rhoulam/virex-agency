@@ -70,9 +70,15 @@ export default function RootLayout({
 				
 				<Background
 						mask="cursor"
-						gradient={true}
-						dots={true}
-						lines={true}/>
+						gradient={{
+							display: true
+						  }}
+						dots={{
+							display: true
+						  }}
+						lines={{
+							display: true
+						  }}/>
 
 				<Flex
 					flex={1} direction="column">
