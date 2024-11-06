@@ -13,6 +13,7 @@ interface SmartLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     style?: React.CSSProperties;
     className?: string;
     selected? : boolean;
+    unstyled?: boolean;
     children: ReactNode;
 }
 
@@ -24,6 +25,7 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
         style,
         className,
         selected,
+        unstyled = false,
         children,
         ...props
     }, ref) => {
@@ -39,17 +41,25 @@ const SmartLink = forwardRef<HTMLAnchorElement, SmartLinkProps>(({
 
         const commonProps = {
             ref,
-            className: classNames(className || '', 'px-4', 'mx-4'),
-            style: {
+            className: classNames(className || '', {
+                'px-4 mx-4': !unstyled,
+            }),
+            style: !unstyled ? {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 'var(--static-space-8)',
                 borderRadius: 'var(--radius-s)',
-                ...(selected && {textDecoration: 'underline'}),
+                ...(selected && { textDecoration: 'underline' }),
+                ...style
+            } : { 
+                textDecoration: 'none',
+                color: 'inherit',
                 ...style
             },
             ...props
         };
+
+        
 
         if (isExternal) {
             return (
