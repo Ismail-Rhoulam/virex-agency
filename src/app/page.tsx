@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
+import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/once-ui/components';
 
 export default function Home() {
 

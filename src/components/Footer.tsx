@@ -1,4 +1,4 @@
-import { Flex, Text, IconButton } from '@/ui/components';
+import { Flex, Text, IconButton } from '@/once-ui/components';
 
 
 export const Footer = () => {
