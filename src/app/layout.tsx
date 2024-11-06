@@ -6,7 +6,7 @@ import { Footer } from "@/components";
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 import { Flex, Background} from '@/once-ui/components';
-import { Sora, Raleway, Work_Sans } from "next/font/google"
+import { Sora, Raleway, Work_Sans } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
