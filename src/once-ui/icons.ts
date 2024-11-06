@@ -25,6 +25,10 @@ import {
 	FaWhatsapp
 } from "react-icons/fa6";
 
+import {
+	TbMailFilled
+} from "react-icons/tb";
+
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
     chevronDown: HiChevronDown,
@@ -45,4 +49,5 @@ export const iconLibrary: Record<string, IconType> = {
 	github: FaGithub,
 	instagram: FaInstagram,
 	whatsapp: FaWhatsapp,
+	mail: TbMailFilled,
 };

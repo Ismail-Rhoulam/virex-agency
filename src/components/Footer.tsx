@@ -7,6 +7,7 @@ export const Footer = () => {
     const wtsp = "https://wa.me/+212663037739?text=Hey"
 	const ig = "https://www.instagram.com/virex_agency/"
     const gh = "https://github.com/Ismail-Rhoulam/virex-agency"
+    const mailto = "mailto:contact@virex.agency"
 
     return (
 
@@ -36,6 +37,10 @@ export const Footer = () => {
                     <IconButton
                         href={wtsp} tooltip="Whatsapp" tooltipPosition="top"
                         icon="whatsapp" size="s" variant="tertiary"/>
+                    
+                    <IconButton
+                        href={mailto} tooltip="Mail" tooltipPosition="top"
+                        icon="mail" size="s" variant="tertiary"/>
                     
                     <IconButton
                         href={gh} tooltip="Github" tooltipPosition="top"
