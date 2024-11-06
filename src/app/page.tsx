@@ -6,7 +6,7 @@ import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, 
 export default function Home() {
 
 	const currentYear = new Date().getFullYear();
-	const wtsp = "https://wa.me/+212603915218?text=Hey"
+	const wtsp = "https://wa.me/+21263037739?text=Hey"
 	const ig = "https://www.instagram.com/virex_agency/"
 
 	return (
@@ -14,7 +14,7 @@ export default function Home() {
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
 			<Background
-				dots={false} lines={false}/>
+				dots={true} lines={false}/>
 			<Flex
 				position="relative"
 				as="section" overflow="hidden"
