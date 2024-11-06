@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Flex, Text } from '@/once-ui/components';
+import { Flex, Text } from '@/ui/components';
 
 
 export default function Work() {
