@@ -6,8 +6,7 @@ import { Heading, Text, Flex, IconButton, Button, InlineCode, Logo, Background, 
 export default function Home() {
 
 	const currentYear = new Date().getFullYear();
-	const wtsp = "https://wa.me/+212663037739?text=Hey"
-	const ig = "https://www.instagram.com/virex_agency/"
+	const wtsp = "https://wa.me/+212663037739"
 
 	return (
 		<Flex

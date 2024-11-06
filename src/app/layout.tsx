@@ -9,24 +9,25 @@ import { Analytics } from "@vercel/analytics/react";
 import { Flex, Background} from '@/once-ui/components';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-const primary = Inter({
-	variable: '--font-primary',
-	subsets: ['latin'],
-	display: 'swap',
-})
+import { Sora, Raleway } from "next/font/google"
+
+const primary = Raleway({
+    variable: '--font-primary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+const secondary = Sora({
+    variable: '--font-secondary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+const tertiary: FontConfig | undefined = undefined;
 
 type FontConfig = {
     variable: string;
 };
-
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
-const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
-/*
-*/
 
 const code = Source_Code_Pro({
 	variable: '--font-code',
@@ -43,11 +44,14 @@ export default function RootLayout({
 		<Flex
 			as="html" lang="en"
 			fillHeight background="page"
-			data-neutral="gray" data-brand="blue" data-accent="violet"
-			data-solid="color" data-solid-style="flat"
 			data-theme="dark"
-			data-border="playful"
-			data-surface="filled"
+			data-brand="blue"
+			data-accent="orange"
+			data-neutral="slate"
+			data-border="conservative"
+			data-solid="contrast"
+			data-solid-style="flat"
+			data-surface="translucent"
 			data-transition="all"
 			className={classNames(
 				primary.variable,

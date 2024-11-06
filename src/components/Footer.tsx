@@ -4,7 +4,7 @@ import { Flex, Text, IconButton } from '@/once-ui/components';
 export const Footer = () => {
 
     const currentYear = new Date().getFullYear();
-    const wtsp = "https://wa.me/+212663037739?text=Hey"
+    const wtsp = "https://wa.me/+212663037739"
 	const ig = "https://www.instagram.com/virex_agency/"
     const gh = "https://github.com/Ismail-Rhoulam/virex-agency"
     const mailto = "mailto:contact@virex.agency"
