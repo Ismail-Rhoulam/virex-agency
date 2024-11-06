@@ -2,7 +2,7 @@ import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
 import classNames from 'classnames';
-import { Footer } from "@/components";
+import { Header, Footer } from "@/components";
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 import { Flex, Background} from '@/once-ui/components';
@@ -68,6 +68,8 @@ export default function RootLayout({
 				direction="column"
 				fillWidth fillHeight margin="0" padding="0">
 				
+				<Header />
+
 				<Background
 						mask="cursor"
 						gradient={{

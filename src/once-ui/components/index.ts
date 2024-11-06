@@ -57,4 +57,4 @@ export { User } from './User';
 export type { UserProps } from './User';
 export { UserMenu } from './UserMenu';
 export { Arrow } from './Arrow';
-export { Badge } from './Badge'
+export { Badge } from './Badge';
