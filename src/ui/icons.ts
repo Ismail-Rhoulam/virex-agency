@@ -9,7 +9,6 @@ import {
 	HiOutlineArrowPath,
 	HiCheck,
 	HiMiniQuestionMarkCircle,
-	HiMiniUser,
 	HiMiniXMark,
 	HiOutlineLink,
 	HiExclamationTriangle,
@@ -21,7 +20,8 @@ import {
 import {
 	PiGridFourDuotone,
 	PiImageDuotone,
-	PiHouseDuotone
+	PiHouseDuotone,
+	PiBuildingApartmentBold
 } from "react-icons/pi";
 
 import {
@@ -49,7 +49,7 @@ export const iconLibrary: Record<string, IconType> = {
 	warningTriangle: HiExclamationTriangle,
 	errorCircle: HiExclamationCircle,
 	checkCircle: HiCheckCircle,
-	person: HiMiniUser,
+	person: PiBuildingApartmentBold,
 	close: HiMiniXMark,
 	openLink: HiOutlineLink,
 	discord: FaDiscord,
