@@ -19,6 +19,12 @@ import {
 } from "react-icons/hi2";
 
 import {
+	PiGridFourDuotone,
+	PiImageDuotone,
+	PiHouseDuotone
+} from "react-icons/pi";
+
+import {
 	FaDiscord,
 	FaGithub,
 	FaInstagram,
@@ -52,4 +58,7 @@ export const iconLibrary: Record<string, IconType> = {
 	whatsapp: FaWhatsapp,
 	mail: TbMailFilled,
 	linkedin: FaLinkedin,
+	grid: PiGridFourDuotone,
+	gallery: PiImageDuotone,
+	home: PiHouseDuotone,
 };

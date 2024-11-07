@@ -26,6 +26,7 @@ export const Header = () => {
                     <ToggleButton
                         href="/"
                         size="m"
+                        prefixIcon="home"
                         label={home.label}
                         selected={pathname === '/'}
                         />
@@ -34,6 +35,7 @@ export const Header = () => {
                     <ToggleButton
                         href="/about"
                         size="m"
+                        prefixIcon="person"
                         label={about.label}
                         selected={pathname === '/about'}
                         />
@@ -42,6 +44,7 @@ export const Header = () => {
                     <ToggleButton
                         href="/services"
                         size="m"
+                        prefixIcon="grid"
                         label={services.label}
                         selected={pathname === '/services'}
                         />
@@ -50,6 +53,7 @@ export const Header = () => {
                     <ToggleButton
                         href="/portfolio"
                         size="m"
+                        prefixIcon="gallery"
                         label={portfolio.label}
                         selected={pathname === '/portfolio'}
                         />
