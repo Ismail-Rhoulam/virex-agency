@@ -5,6 +5,16 @@ import React, { useEffect, useState } from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
 
 
+export async function generateMetadata() {
+  const { home } = render();
+  const title = home.title;
+  const description = home.description;
+  return {
+    title,
+    description
+  }
+}
+
 export default function Home() {
 
   const { socials } = render();
