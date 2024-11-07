@@ -3,9 +3,24 @@
 import React from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
 
-export default function Home() {
+
+export async function getServerSideProps(context) {
+	const ip = context.req.headers['x-forwarded-for'] || context.req.connection.remoteAddress;
+	const response = await fetch(`https://ipinfo.io/${ip}?token=a9aae83ccddd15`);
+	const locationData = await response.json();
+
+	return {
+		props: {
+			location : locationData,
+		}
+	}
+}
+
+
+export default function Home({ location }) {
 
 	const wtsp = "https://wa.me/+212663037739"
+	const loc = location
 
 	return (
 		<Flex
@@ -46,7 +61,7 @@ export default function Home() {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Helping Brands Tell Stories and Stories Build Brands.
+										Helping Brands Tell Stories and Stories Build Brands. from {loc}
 									</LetterFx>
 								</span>
 							</Heading>

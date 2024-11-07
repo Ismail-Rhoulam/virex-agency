@@ -22,7 +22,8 @@ import {
 	FaDiscord,
 	FaGithub,
 	FaInstagram,
-	FaWhatsapp
+	FaWhatsapp,
+	FaLinkedin
 } from "react-icons/fa6";
 
 import {
@@ -50,4 +51,5 @@ export const iconLibrary: Record<string, IconType> = {
 	instagram: FaInstagram,
 	whatsapp: FaWhatsapp,
 	mail: TbMailFilled,
+	linkedin: FaLinkedin,
 };
