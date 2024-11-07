@@ -16,7 +16,7 @@ export const Footer = () => {
             justifyContent="center">
 
             <Flex
-                fillWidth maxWidth="m" paddingY="4" paddingX="16"
+                paddingY="4" paddingX="16"
                 justifyContent="space-between" alignItems="center">
                 
                 <Text
