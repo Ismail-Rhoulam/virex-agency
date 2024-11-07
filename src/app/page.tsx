@@ -2,7 +2,18 @@
 
 import React from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
-import { isIP } from 'net';
+
+type Location = {
+	ip: string;
+	city: string;
+	region: string;
+	country: string;
+	loc: string; // A string in the format "latitude,longitude"
+	org: string;
+	hostname: string;
+	postal: string;
+	timezone: string;
+  };
 
 
 async function getLocationData(ip: string) {
@@ -19,7 +30,7 @@ async function iipp({headers}: { headers: Headers}) {
 	return ( location )
 }
 
-export default function Home({ location }) {
+export default function Home({ location }: { location: Location }) {
 
 	const wtsp = "https://wa.me/+212663037739";
 	const loc = location;
@@ -63,8 +74,9 @@ export default function Home({ location }) {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Helping Brands Tell Stories and Stories Build Brands. from {loc}
+										Helping Brands Tell Stories and Stories Build Brands.
 									</LetterFx>
+									<InlineCode>{JSON.stringify(location)}</InlineCode>
 								</span>
 							</Heading>
 							<Badge
