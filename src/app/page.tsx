@@ -2,25 +2,23 @@
 
 import React from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
+import { isIP } from 'net';
 
 
-export async function getServerSideProps(context) {
-	const ip = context.req.headers['x-forwarded-for'] || context.req.connection.remoteAddress;
+async function getLocationData(ip: string) {
 	const response = await fetch(`https://ipinfo.io/${ip}?token=a9aae83ccddd15`);
-	const locationData = await response.json();
-
-	return {
-		props: {
-			location : locationData,
-		}
-	}
+	if (!response.ok) throw new Error('Failed to fetch location data');
+	return response.json();
 }
 
 
-export default function Home({ location }) {
+
+
+export default async function Home({ headers }: { headers: Headers }) {
 
 	const wtsp = "https://wa.me/+212663037739"
-	const loc = location
+	const ip = headers.get('x-client-ip') || '0.0.0.0';
+	const loc = await getLocationData(ip);
 
 	return (
 		<Flex
