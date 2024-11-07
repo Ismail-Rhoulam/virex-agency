@@ -5,13 +5,13 @@ import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/component
 import { isIP } from 'net';
 
 
-export async function getLocationData(ip: string) {
+async function getLocationData(ip: string) {
 	const response = await fetch(`https://ipinfo.io/${ip}?token=a9aae83ccddd15`);
 	if (!response.ok) throw new Error('Failed to fetch location data');
 	return response.json();
 }
 
-export async function iipp({headers}: { headers: Headers}) {
+async function iipp({headers}: { headers: Headers}) {
 
 	const ip = headers.get('x-client-ip') || '0.0.0.0';
 	const locationn = await getLocationData(ip);
