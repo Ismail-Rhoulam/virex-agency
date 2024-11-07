@@ -4,7 +4,7 @@ import React from "react";
 import { usePathname } from 'next/navigation'
 import { routes, render } from "@/app/resources";
 import { Flex, ToggleButton } from "@/ui/components";
-import { Content } from "next/font/google";
+import styles from '@/components/Header.module.scss'
 
 export const Header = () => {
 
@@ -15,10 +15,7 @@ export const Header = () => {
 
         <Flex
             as="header"
-            style={{
-                height: fit-content;
-                width: fit-content;
-            }}
+            className={style.position}
             background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
             padding="4" justifyContent="center">
             <Flex
