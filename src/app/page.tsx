@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Flex
       fillWidth paddingTop="l" paddingX="l"
-      direction="column" alignItems="center" flex={1}>
+      direction="row" alignItems="center" flex={1}>
 
       <Flex
         position="relative"
@@ -29,6 +29,7 @@ export default function Home() {
           <Flex
             mobileDirection="column"
             fillWidth gap="24">
+            
             <Flex
               position="relative"
               flex={2} paddingTop="56" paddingX="xl">
