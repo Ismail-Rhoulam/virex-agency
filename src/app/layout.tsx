@@ -1,11 +1,13 @@
 import "@/ui/styles/index.scss";
 import "@/ui/tokens/index.scss";
 
+
+import Head from 'next/head';
 import classNames from 'classnames';
 import { Header, Footer } from "@/components";
+import { Flex, Background} from '@/ui/components';
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
-import { Flex, Background} from '@/ui/components';
 import { Sora, Raleway, Work_Sans } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -62,7 +64,8 @@ export default function RootLayout({
 				tertiary.variable,
 				code.variable,
 				'root')}>
-					
+			
+			<Head><link rel="icon" href="/favicon.ico" sizes="any" /></Head>
 			<Flex 
 				as="body"
 				direction="column"
