@@ -21,7 +21,7 @@ import {
 	PiGridFourDuotone,
 	PiImageDuotone,
 	PiHouseDuotone,
-	PiBuildingApartmentBold
+	PiBuildingApartmentLight,
 } from "react-icons/pi";
 
 import {
@@ -49,7 +49,7 @@ export const iconLibrary: Record<string, IconType> = {
 	warningTriangle: HiExclamationTriangle,
 	errorCircle: HiExclamationCircle,
 	checkCircle: HiCheckCircle,
-	person: PiBuildingApartmentBold,
+	person: PiBuildingApartmentLight,
 	close: HiMiniXMark,
 	openLink: HiOutlineLink,
 	discord: FaDiscord,
