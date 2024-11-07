@@ -81,7 +81,8 @@ export default function RootLayout({
 						  }}/>
 
 				<Flex
-					fillWidth justifyContent="center">
+					fillWidth justifyContent="center"
+					paddingTop="20">
 					<Header />
 				</Flex>
 				
