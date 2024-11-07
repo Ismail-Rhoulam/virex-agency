@@ -1,13 +1,11 @@
 import { Flex, Text, IconButton } from '@/ui/components';
+import { render } from '@/app/resources'
 
 
 export const Footer = () => {
 
     const currentYear = new Date().getFullYear();
-    const wtsp = "https://wa.me/+212663037739"
-	const ig = "https://www.instagram.com/virex_agency/"
-    const gh = "https://github.com/Ismail-Rhoulam/virex-agency"
-    const mailto = "mailto:contact@virex.agency"
+    const { socials } = render();
 
     return (
 
@@ -30,21 +28,17 @@ export const Footer = () => {
                     gap="24"
                     paddingY="s">
                     
-                    <IconButton
-                        href={ig} tooltip="Instagram" tooltipPosition="top"
-                        icon="instagram" size="s" variant="tertiary"/>
-                    
-                    <IconButton
-                        href={wtsp} tooltip="Whatsapp" tooltipPosition="top"
-                        icon="whatsapp" size="s" variant="tertiary"/>
-                    
-                    <IconButton
-                        href={mailto} tooltip="Mail" tooltipPosition="top"
-                        icon="mail" size="s" variant="tertiary"/>
-                    
-                    <IconButton
-                        href={gh} tooltip="Github" tooltipPosition="top"
-                        icon="github" size="s" variant="tertiary"/>
+                    {socials.map((item) => (
+                        item.link && (
+                            <IconButton
+                                key={item.name}
+                                href={item.link}
+                                icon={item.icon}
+                                tooltip={item.name}
+                                variant='ghost'
+                                size='s'/>
+                        )
+                    ))}
 
                 </Flex>
 

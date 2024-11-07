@@ -68,8 +68,9 @@ export default function RootLayout({
 				direction="column"
 				fillWidth fillHeight margin="0" padding="0">
 				
-				<Header />
-				
+				<Header 
+					authenticated/>
+
 				<Background
 						mask="cursor"
 						gradient={{

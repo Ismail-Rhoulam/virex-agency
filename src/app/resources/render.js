@@ -1,5 +1,13 @@
-import { socials } from './content';
+import { home, about, services, portfolio, socials } from './content';
 
-const render = socials;
+const render = () => {
+    return {
+        home,
+        about,
+        services,
+        portfolio,
+        socials
+    }
+};
 
 export { render }

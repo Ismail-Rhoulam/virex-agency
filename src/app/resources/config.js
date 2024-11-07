@@ -1,3 +1,5 @@
+const baseURL = "virex.agency"
+
 const routes = {
     '/':        true,
     '/about':   true,
@@ -5,4 +7,4 @@ const routes = {
     '/porfolio': true,
 }
 
-export { routes };
+export { baseURL, routes };
