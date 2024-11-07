@@ -1,5 +1,3 @@
-"use client";
-
 import { render } from '@/app/resources'
 import React, { useEffect, useState } from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
