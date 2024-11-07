@@ -3,40 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
 
-type Location = {
-  ip: string;
-  city: string;
-  region: string;
-  country: string;
-  loc: string; // A string in the format "latitude,longitude"
-  org: string;
-  hostname: string;
-  postal: string;
-  timezone: string;
-};
-
-async function getLocationData(ip: string) {
-  const response = await fetch(`https://ipinfo.io/${ip}?token=a9aae83ccddd15`);
-  if (!response.ok) throw new Error('Failed to fetch location data');
-  return response.json();
-}
 
 export default function Home() {
-  const [location, setLocation] = useState<Location | null>(null);
-
-  useEffect(() => {
-    async function fetchLocation() {
-      const ip = '0.0.0.0'; // Replace with actual IP-fetching logic (e.g., via headers, API)
-      try {
-        const data = await getLocationData(ip);
-        setLocation(data);
-      } catch (error) {
-        console.error('Error fetching location:', error);
-      }
-    }
-
-    fetchLocation();
-  }, []);
 
   const wtsp = "https://wa.me/+212663037739";
 
@@ -81,7 +49,6 @@ export default function Home() {
                     trigger="instant">
                     Helping Brands Tell Stories and Stories Build Brands.
                   </LetterFx>
-                  <InlineCode>{location ? JSON.stringify(location) : 'Loading location...'}</InlineCode>
                 </span>
               </Heading>
               <Badge
