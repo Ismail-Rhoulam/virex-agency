@@ -25,8 +25,7 @@ async function getLocationData(ip: string) {
 async function iipp({headers}: { headers: Headers}) {
 
 	const ip = headers.get('x-client-ip') || '0.0.0.0';
-	const locationn = await getLocationData(ip);
-	const location = JSON.stringify(locationn)
+	const location = await getLocationData(ip);
 	return ( location )
 }
 
@@ -76,7 +75,7 @@ export default function Home({ location }: { location: Location }) {
 										trigger="instant">
 										Helping Brands Tell Stories and Stories Build Brands.
 									</LetterFx>
-									<InlineCode>{JSON.stringify(location)}</InlineCode>
+									<InlineCode>{JSON.stringify(loc)}</InlineCode>
 								</span>
 							</Heading>
 							<Badge
