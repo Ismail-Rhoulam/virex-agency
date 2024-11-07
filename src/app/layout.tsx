@@ -65,7 +65,7 @@ export default function RootLayout({
 				code.variable,
 				'root')}>
 			
-			<Head><link rel="icon" href="/favicon.ico" sizes="any" /></Head>
+			<Head><link rel="icon" href="favicon.ico" sizes="any" /></Head>
 			<Flex 
 				as="body"
 				direction="column"
