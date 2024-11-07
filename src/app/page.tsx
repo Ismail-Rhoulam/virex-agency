@@ -5,20 +5,31 @@ import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/component
 import { isIP } from 'net';
 
 
-async function getLocationData(ip: string) {
+export async function getLocationData(ip: string) {
 	const response = await fetch(`https://ipinfo.io/${ip}?token=a9aae83ccddd15`);
 	if (!response.ok) throw new Error('Failed to fetch location data');
 	return response.json();
 }
 
+export async function iipp({headers}: { headers: Headers}) {
 
-
-
-export default async function Home({ headers }: { headers: Headers }) {
-
-	const wtsp = "https://wa.me/+212663037739"
 	const ip = headers.get('x-client-ip') || '0.0.0.0';
-	const loc = await getLocationData(ip);
+	const locationn = await getLocationData(ip);
+	
+	return {
+		props: {
+			location: locationn,
+		}
+	}
+}
+
+
+
+
+export default async function Home({{ location }) {
+
+	const wtsp = "https://wa.me/+212663037739";
+	const loc = location;
 
 	return (
 		<Flex
