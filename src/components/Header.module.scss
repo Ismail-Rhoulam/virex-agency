@@ -1,7 +1,6 @@
 .position {
-    display: flex;
-    justify-content: center;
-    top: 10;
+    position: sticky;
+    top: 0;
 }
 
 @media (--s) {
