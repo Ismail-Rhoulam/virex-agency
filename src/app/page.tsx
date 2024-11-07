@@ -16,7 +16,7 @@ export async function iipp({headers}: { headers: Headers}) {
 	const ip = headers.get('x-client-ip') || '0.0.0.0';
 	const locationn = await getLocationData(ip);
 	const location = JSON.stringify(locationn)
-	return location
+	return ( location )
 }
 
 export default async function Home({{ location }) {
