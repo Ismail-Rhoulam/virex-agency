@@ -13,6 +13,7 @@ export const Header = () => {
     return (
 
         <Flex
+            fillWidth
             background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
             padding="4" justifyContent="center">
             <Flex
