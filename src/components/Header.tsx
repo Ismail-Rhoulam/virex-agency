@@ -15,10 +15,10 @@ export const Header = () => {
 
         <Flex
             as="header"
-            style={{height: 'fit-content'}}
+            style={{width: 'fit-content'}}
             className={styles.position}
             background="surface" border="neutral-medium" borderStyle="solid-1" radius="m-4" shadow="l"
-            padding="4" justifyContent="normal">
+            padding="4" justifyContent="center">
             <Flex
                 gap="4"
                 textVariant="body-default-s">
