@@ -80,8 +80,11 @@ export default function RootLayout({
 							display: true
 						  }}/>
 
-				<Header />
-
+				<Flex
+					fillWidth justifyContent="center">
+					<Header />
+				</Flex>
+				
 				<Flex
 					flex={1} direction="column">
 					{children}
