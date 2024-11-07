@@ -19,7 +19,7 @@ export async function iipp({headers}: { headers: Headers}) {
 	return ( location )
 }
 
-export default async function Home({{ location }) {
+export default function Home({ location }) {
 
 	const wtsp = "https://wa.me/+212663037739";
 	const loc = location;
