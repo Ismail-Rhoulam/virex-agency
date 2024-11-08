@@ -14,7 +14,7 @@ export async function generateMetadata() {
 
 export default function About() {
     return (
-        <Grid columns="repeat(3, 1fr)" fillWidth align="center" padding='24'>
+        <Grid columns="repeat(3, 1fr)" fillWidth align="center" padding='l' zIndex="1">
             <Flex direction="column" background="neutral-medium" fillWidth >
                 <Heading>Get To Know Us!</Heading>
             </Flex>
