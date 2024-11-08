@@ -87,7 +87,7 @@ export default function RootLayout({
 				
 				<Header/>
 				
-				<Flex fillWidth paddingY="l" paddingX="l">
+				<Flex paddingY="l" paddingX="l">
 					<Flex flex={1} direction="column">
 						{children}
 						<Analytics />
