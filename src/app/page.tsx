@@ -71,14 +71,14 @@ export default function Home() {
                   </LetterFx>
                 </span>
               
+              </Heading>
+
               <Badge
                 arrow
                 effect
                 href={wtsp}>
                 Book an appointment 
               </Badge>
-              
-              </Heading>
 
             </Flex>
 
