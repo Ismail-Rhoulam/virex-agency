@@ -81,16 +81,14 @@ export default function RootLayout({
 							display: true
 						  }}/>
 
-				<Flex
-					fillWidth justifyContent="center">
-					<Header />
-				</Flex>
+				<Header/>
 				
-				<Flex
-					flex={1} direction="column">
-					{children}
-					<Analytics />
-					<SpeedInsights />
+				<Flex fillWidth paddingY="l" paddingX="l">
+					<Flex flex={1} direction="column">
+						{children}
+						<Analytics />
+						<SpeedInsights />
+					</Flex>
 				</Flex>
 
 				<Footer />
