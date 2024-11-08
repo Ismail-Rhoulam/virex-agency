@@ -3,9 +3,9 @@ import { Flex, Logo, Text, Heading } from '@/ui/components';
 
 
 export async function generateMetadata() {
-    const { home } = render();
-    const title = home.title;
-    const description = home.description;
+    const { about } = render();
+    const title = about.title;
+    const description = about.description;
     return {
       title,
       description
