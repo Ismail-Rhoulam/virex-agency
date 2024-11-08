@@ -4,7 +4,7 @@ import React from "react";
 import { usePathname } from 'next/navigation'
 import { routes, render } from "@/app/resources";
 import { Flex, Logo, ToggleButton } from "@/ui/components";
-import styles from '@/components/Header.module.scss'
+import styles from './Header.module.scss'
 
 export const Header = () => {
 

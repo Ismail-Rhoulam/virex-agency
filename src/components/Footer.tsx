@@ -1,5 +1,6 @@
 import { Flex, Text, IconButton } from '@/ui/components';
-import { render } from '@/app/resources'
+import styles from './Footer.module.scss';
+import { render } from '@/app/resources';
 
 
 export const Footer = () => {
@@ -13,19 +14,20 @@ export const Footer = () => {
             as="footer"
             position="relative"
             fillWidth padding="8"
-            justifyContent="center">
+            justifyContent="center" mobileDirection="column">
 
             <Flex
+                className={styles.mobile}
                 fillWidth maxWidth="m" paddingY="4" paddingX="16"
                 justifyContent="space-between" alignItems="center">
                 
                 <Text
-                    variant="body-default-s" onBackground="neutral-weak">
+                    variant="body-default-s" onBackground="neutral-strong">
                     © {currentYear} VIREX Agency, All Rights Reserved
                 </Text>
 
                 <Flex
-                    gap="24"
+                    gap="16"
                     paddingY="s">
                     
                     {socials.map((item) => (
@@ -43,7 +45,7 @@ export const Footer = () => {
                 </Flex>
 
             </Flex>
-
+            <Flex height="80" show='s'></Flex>
         </Flex>
     )
 }
