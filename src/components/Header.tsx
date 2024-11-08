@@ -21,7 +21,7 @@ export const Header = () => {
 
             <Flex
                 as="header"
-                style={{width: 'fit-content'}}
+                style={{height: 'fit-content'}}
                 className={styles.position} fillWidth
                 padding="8" justifyContent="center">
                 
