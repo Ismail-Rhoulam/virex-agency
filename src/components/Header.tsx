@@ -26,9 +26,10 @@ export const Header = () => {
                 padding="8" justifyContent="center">
                 
                 <Flex
+                    
                     paddingLeft="m" fillWidth
                     alignItems="center"
-                    textVariant="body-default-s">
+                    textVariant="body-default-s" hide="s">
                     <Logo size="s" icon={false}/>
                 </Flex>
                 <Flex fillWidth justifyContent="center">
@@ -42,36 +43,37 @@ export const Header = () => {
                                     href="/"
                                     size="m"
                                     prefixIcon="home"
-                                    label={home.label}
-                                    selected={pathname === '/'}
-                                    />
+                                    selected={pathname === '/'}>
+                                    <Flex paddingX="2" hide="s">{home.label}</Flex>
+                                </ToggleButton>
+                                    
                             )}
                             { routes['/about'] && (
                                 <ToggleButton
                                     href="/about"
                                     size="m"
                                     prefixIcon="person"
-                                    label={about.label}
-                                    selected={pathname === '/about'}
-                                    />
+                                    selected={pathname === '/about'}>
+                                    <Flex paddingX="2" hide="s">{about.label}</Flex>
+                                </ToggleButton>
                             )}
                             { routes['/services'] && (
                                 <ToggleButton
                                     href="/services"
                                     size="m"
                                     prefixIcon="grid"
-                                    label={services.label}
-                                    selected={pathname === '/services'}
-                                    />
+                                    selected={pathname === '/services'}>
+                                    <Flex paddingX="2" hide="s">{services.label}</Flex>
+                                </ToggleButton>
                             )}
                             { routes['/porfolio'] && (
                                 <ToggleButton
                                     href="/portfolio"
                                     size="m"
                                     prefixIcon="gallery"
-                                    label={portfolio.label}
-                                    selected={pathname === '/portfolio'}
-                                    />
+                                    selected={pathname === '/portfolio'}>
+                                    <Flex paddingX="2" hide="s">{portfolio.label}</Flex>
+                                </ToggleButton>
                             )}
                         </Flex>
                     </Flex>
