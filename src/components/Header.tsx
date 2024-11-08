@@ -15,7 +15,7 @@ export const Header = () => {
         <>
             <Flex
                 className={styles.mask}
-                position="fixed" zIndex={9}
+                position="fixed" zIndex={0}
                 fillWidth minHeight="80" justifyContent="center">
             </Flex>
 
