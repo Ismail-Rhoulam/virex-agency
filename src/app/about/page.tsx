@@ -16,7 +16,6 @@ export default function About() {
     return (
         <Flex zIndex={1000}
             fillWidth fillHeight border="surface">
-            <Logo size='s'/>
             <Heading>
                 <Text>Get To Know Us</Text>
             </Heading>
