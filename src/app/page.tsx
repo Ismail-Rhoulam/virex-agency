@@ -72,14 +72,14 @@ export default function Home() {
                 </span>
               
               </Heading>
-
-              <Badge
-                arrow
-                effect
-                href={wtsp}>
-                Book an appointment 
-              </Badge>
-
+              <Flex style={{width: "fit-content"}}>
+                <Badge
+                  arrow
+                  effect
+                  href={wtsp}>
+                  Book an appointment 
+                </Badge>
+              </Flex>
             </Flex>
 
           </Flex>
