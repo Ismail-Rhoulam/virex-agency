@@ -1,5 +1,5 @@
 import { render } from '@/app/resources'
-import { Flex, Logo, Text, Heading } from '@/ui/components';
+import { Flex, Grid, Logo, Text, Heading } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -14,12 +14,16 @@ export async function generateMetadata() {
 
 export default function About() {
     return (
-        <Flex zIndex={1} margin='20'
-            fillWidth fillHeight border="surface">
-            <Logo icon={false} size='s'/>
-            <Heading>
-                <Text>Get To Know Us</Text>
-            </Heading>
-        </Flex>
+        <Grid repeat="repeat(3, 1fr)">
+            <Flex direction="column" background="neutral-medium">
+                <Heading>Get To Know Us!</Heading>
+            </Flex>
+            <Flex direction="column" background="neutral-medium">
+                <Heading>Test</Heading>
+            </Flex>
+            <Flex direction="column" background="neutral-medium">
+                <Heading>Test</Heading>
+            </Flex>
+        </Grid>
     )
 };
