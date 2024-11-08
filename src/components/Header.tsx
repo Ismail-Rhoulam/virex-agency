@@ -26,7 +26,7 @@ export const Header = () => {
                 padding="8" justifyContent="center">
                 
                 <Flex
-                    paddingLeft="12" fillWidth
+                    paddingLeft="m" fillWidth
                     alignItems="center"
                     textVariant="body-default-s">
                     <Logo size="s" icon={false}/>
