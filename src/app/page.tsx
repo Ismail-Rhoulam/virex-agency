@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Flex
       fillWidth paddingTop="l" paddingX="l"
-      direction="row" alignItems="center" flex={1}>
+      direction="column" alignItems="center" flex={1}>
 
       <Flex
         position="relative"
