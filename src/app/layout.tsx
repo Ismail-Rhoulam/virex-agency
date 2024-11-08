@@ -67,7 +67,7 @@ export default function RootLayout({
 			<Flex 
 				as="body"
 				direction="column"
-				fillWidth fillHeight margin="0" padding="0">
+				fillWidth margin="0" padding="0">
 
 				<Background
 						mask="cursor"
