@@ -14,7 +14,7 @@ export async function generateMetadata() {
 
 export default function About() {
     return (
-        <Flex
+        <Flex zIndex={1000}
             fillWidth fillHeight border="surface">
             <Logo size='s'/>
             <Heading>
