@@ -64,7 +64,7 @@ export default function RootLayout({
 				tertiary.variable,
 				code.variable,
 				'root')}>
-			<Flex 
+			<Flex style={{minHeight: '100vh'}}
 				as="body"
 				direction="column"
 				fillWidth margin="0" padding="0">
@@ -80,7 +80,11 @@ export default function RootLayout({
 						lines={{
 							display: true
 						  }}/>
-
+				<Flex
+						fillWidth
+						minHeight="16">
+				</Flex>
+				
 				<Header/>
 				
 				<Flex fillWidth paddingY="l" paddingX="l">
