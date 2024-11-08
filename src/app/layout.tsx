@@ -87,8 +87,11 @@ export default function RootLayout({
 				
 				<Header/>
 				
-				<Flex paddingY="l" paddingX="l">
-					<Flex flex={1} direction="column">
+				<Flex fillWidth paddingY="l" paddingX="l"
+					justifyContent="center" flex={1}>
+					<Flex 
+						justifyContent="center"
+						fillWidth minHeight="0">
 						{children}
 						<Analytics />
 						<SpeedInsights />
