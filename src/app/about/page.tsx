@@ -15,13 +15,13 @@ export async function generateMetadata() {
 export default function About() {
     return (
         <Grid columns="repeat(3, 1fr)" fillWidth>
-            <Flex direction="column" background="neutral-medium">
+            <Flex direction="column" background="neutral-medium" fillWidth justifyContent="center">
                 <Heading>Get To Know Us!</Heading>
             </Flex>
-            <Flex direction="column" background="neutral-medium">
+            <Flex direction="column" fillWidth justifyContent="center">
                 <Heading>Test</Heading>
             </Flex>
-            <Flex direction="column" background="neutral-medium">
+            <Flex direction="column" background="neutral-medium" fillWidth justifyContent="center">
                 <Heading>Test</Heading>
             </Flex>
         </Grid>
