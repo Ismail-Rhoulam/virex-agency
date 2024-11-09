@@ -44,9 +44,10 @@ export default function About() {
                             </Heading>
                             <IconButton
                                 size="l"
+                                href='#anchor'
                                 variant="ghost"
                                 icon="chevronDown"
-                                onClick={() => scrollAsabhi('anchor')}/>
+                                />
 
                         </Flex>
 

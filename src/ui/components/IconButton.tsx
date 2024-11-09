@@ -23,6 +23,7 @@ export type IconButtonProps = CommonProps & React.ButtonHTMLAttributes<HTMLButto
 export type AnchorProps = CommonProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const isExternalLink = (url: string) => /^https?:\/\//.test(url);
+const isAnchorLink = (url: string) => url.startsWith("#");
 
 const IconButton = forwardRef<HTMLButtonElement, IconButtonProps | AnchorProps>(({
     icon = 'refresh',
@@ -53,6 +54,14 @@ const IconButton = forwardRef<HTMLButtonElement, IconButtonProps | AnchorProps>(
     }, [isHover]);
 
     const iconSize = size === 's' ? 's' : 'm';
+
+    const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        if (href && isAnchorLink(href)) {
+            event.preventDefault();
+            const targetElement = document.querySelector(href);
+            targetElement?.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     const content = (
         <>
@@ -99,7 +108,8 @@ const IconButton = forwardRef<HTMLButtonElement, IconButtonProps | AnchorProps>(
                 href={href}
                 ref={ref as React.Ref<HTMLAnchorElement>}
                 {...commonProps}
-                {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
+                {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+                onClick={handleClick}>
                 {content}
             </Link>
         );
