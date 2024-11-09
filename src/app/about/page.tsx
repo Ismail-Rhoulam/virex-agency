@@ -44,7 +44,7 @@ export default function About() {
                                 size="l"
                                 variant="ghost"
                                 icon="chevronDown">
-                                <Link href='#anchor'></Link>    
+                                <Link href='#anchor'/>   
                             </IconButton>
 
                         </Flex>
