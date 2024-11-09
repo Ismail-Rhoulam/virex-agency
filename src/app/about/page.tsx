@@ -15,22 +15,19 @@ export async function generateMetadata() {
 
 export default function About() {
     return (
-        <Flex fillWidth gap='m' paddingY='l' direction='column' zIndex="1">
-            <Flex direction='row' justifyContent="start" paddingLeft='l' gap='24' fillWidth>
-                <Flex fillWidth justifyContent="start">
-                    <RevealFx translateY="0" speed='fast'>
-                        <Heading>{about.description}</Heading>
-                    </RevealFx>
-                </Flex>
-                <Flex fillWidth justifyContent="center">
-                    <RevealFx>
-                        <Text>I'm Glad You Came This Far!!</Text>
-                    </RevealFx>
-                </Flex>
-                <Flex fillWidth justifyContent="end">
-                    <RevealFx>
-                        <Text>This is where it get's intresting!!!</Text>
-                    </RevealFx>
+        <Flex fillWidth paddingTop='l' paddingX='l'
+            direction='column' alignItems=' center' flex={1}>
+            
+            <Flex
+                position='relative'
+                as="section" overflow='hidden'
+                fillWidth direction='column' alignItems='center' flex={1}>
+                
+                <Flex
+                    as-='main'
+                    direction='column' justifyContent='center'
+                    fillWidth fillHeight padding='l' gap='l'>
+                        <Heading>Test Test Lamyae zwina</Heading>
                 </Flex>
             </Flex>
         </Flex>
