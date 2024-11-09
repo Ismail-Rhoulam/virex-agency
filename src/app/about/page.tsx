@@ -1,11 +1,18 @@
+import { Link } from 'next/'
 import { render } from '@/app/resources'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
+    
     const { about } = render();
     const title = about.title;
     const description = about.description;
+    const scrollAsabhi = function (element_id: string) {
+        const element = document.getElementById(element_id)
+        element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest"});
+    }
+    
     return {
       title,
       description
@@ -36,11 +43,9 @@ export default function About() {
                             </Heading>
                             <IconButton
                                 size="l"
-                                href='#anchor'
-                                icon="chevronDown"
                                 variant="ghost"
-                                style={{scrollBehavior: 'smooth'}}
-                                />
+                                icon="chevronDown"
+                                onClick={() => scrollAsabhi('anchor')}/>
 
                         </Flex>
 
