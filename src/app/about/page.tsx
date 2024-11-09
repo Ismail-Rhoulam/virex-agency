@@ -37,7 +37,6 @@ export default function About() {
                             <IconButton
                                 size="l"
                                 icon="chevronDown"
-                                href='#anchor'
                                 variant="ghost"
                                 onClick={() => {document.getElementById('anchor')?.scrollIntoView({ behavior: 'smooth' });}}
                                 />
