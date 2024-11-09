@@ -27,9 +27,13 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
-                            Test Test Lamyae zwina
-                        </Heading>
+                        <Flex style={{width: 'fit-content'}}>
+                            <RevealFx>
+                                <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
+                                    Test Test Lamyae zwina
+                                </Heading>
+                            </RevealFx>
+                        </Flex>
                 </Flex>
             </Flex>
         </Flex>
