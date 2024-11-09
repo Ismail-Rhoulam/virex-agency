@@ -1,6 +1,5 @@
 import { render } from '@/app/resources'
-import { Flex, Grid, Logo, Text, Heading, SparkleFx } from '@/ui/components';
-import { about } from '../resources/content';
+import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -27,14 +26,31 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Flex alignItems='center' justifyContent='center' fillWidth>
+                        
+                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth minHeight={80}>
                             
-                            <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
+                            <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
                                     <span>Come Closer</span>
                                 </SparkleFx>
                             </Heading>
+                            <IconButton
+                                icon="chevronDown"
+                                size="l"
+                                href='#anchor'
+                                variant="ghost"
+                                />
+
                         </Flex>
+
+                        <Flex id='anchor' fillWidth justifyContent='center' minHeight={80}>
+                            <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
+                                <SparkleFx>
+                                    <span>Lamayaaae</span>
+                                </SparkleFx>
+                            </Heading>
+                        </Flex>
+
                 </Flex>
             </Flex>
         </Flex>
