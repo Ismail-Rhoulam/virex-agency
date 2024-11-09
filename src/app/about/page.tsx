@@ -39,7 +39,7 @@ export default function About() {
                                 <SparkleFx>
                                     <span>Come Closer</span>
                                 </SparkleFx>
-                                <Link href='#anchor'><Icon name='chevronDown' /></Link>
+                                <Link href='#anchor' scroll={false} ><Icon name='chevronDown' /></Link>
                             </Heading>
                             
 
