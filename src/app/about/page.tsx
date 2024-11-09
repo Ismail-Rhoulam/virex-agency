@@ -28,7 +28,7 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
                         
-                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth minHeight={80}>
+                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '80vh'}}>
                             
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
