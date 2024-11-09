@@ -1,4 +1,3 @@
-import { Link } from 'next/'
 import { render } from '@/app/resources'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
