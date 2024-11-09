@@ -27,7 +27,9 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Heading size='xl'>Test Test Lamyae zwina</Heading>
+                        <Heading wrap='balance' variant='display-strong-s'>
+                            Test Test Lamyae zwina
+                        </Heading>
                 </Flex>
             </Flex>
         </Flex>
