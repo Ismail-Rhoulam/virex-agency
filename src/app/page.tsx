@@ -65,8 +65,7 @@ export default function Home() {
                 variant="display-strong-s">
 
                 <span className="font-code">
-                  <SparkleFx
-                    trigger="instant">
+                  <SparkleFx>
                     Helping Brands Tell Stories and Stories Build Brands.
                   </SparkleFx>
                 </span>
