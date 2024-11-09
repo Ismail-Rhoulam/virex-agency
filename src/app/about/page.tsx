@@ -18,7 +18,7 @@ export default function About() {
         <Flex fillWidth gap='m' paddingY='l' direction='column' zIndex="1">
             <Flex direction='row' justifyContent="start" paddingLeft='l' gap='24' fillWidth>
                 <Flex fillWidth justifyContent="start">
-                    <RevealFx translateY="4">
+                    <RevealFx translateY="4" speed='fast'>
                         <Heading>{about.description}</Heading>
                     </RevealFx>
                 </Flex>
