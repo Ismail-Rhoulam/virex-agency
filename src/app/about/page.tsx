@@ -54,7 +54,7 @@ export default function About() {
                         <Flex id='anchor' fillWidth justifyContent='center' minHeight={80}>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
-                                    <span>Lamayaaae</span>
+                                    <span>Let's see what we got here</span>
                                 </SparkleFx>
                             </Heading>
                         </Flex>
