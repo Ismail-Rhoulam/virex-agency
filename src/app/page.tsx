@@ -1,6 +1,6 @@
 import { render } from '@/app/resources'
 import React, { useEffect, useState } from 'react';
-import { Heading, Flex, InlineCode, Logo, LetterFx, Badge } from '@/ui/components';
+import { Heading, Flex, InlineCode, Logo, SparkleFx, Badge } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -65,10 +65,10 @@ export default function Home() {
                 variant="display-strong-s">
 
                 <span className="font-code">
-                  <LetterFx
-                    trigger="instant">
+                  <SparkleFx
+                    >
                     Helping Brands Tell Stories and Stories Build Brands.
-                  </LetterFx>
+                  </SparkleFx>
                 </span>
               
               </Heading>
