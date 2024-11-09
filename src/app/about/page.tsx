@@ -39,13 +39,13 @@ export default function About() {
                                 <SparkleFx>
                                     <span>Come Closer</span>
                                 </SparkleFx>
-                                <a href='#anchor'><Icon name='chevronDown' /></a>
+                                <Link href='#anchor'><Icon name='chevronDown' /></Link>
                             </Heading>
                             
 
                         </Flex>
 
-                        <Flex ref='anchor' fillWidth justifyContent='center' minHeight={80}>
+                        <Flex id='anchor' fillWidth justifyContent='center' minHeight={80}>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
                                     <span>Lamayaaae</span>
