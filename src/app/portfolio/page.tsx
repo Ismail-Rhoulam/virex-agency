@@ -15,7 +15,7 @@ export async function generateMetadata() {
 export default function Portfolio() {
     return (
         <Flex fillWidth justifyContent='center'>
-          <Flex justifyContent='fit-content' maxHeight="l" maxWidth="m">
+          <Flex justifyContent='fit-content' maxHeight="l" maxWidth="m" background='neutral-medium'>
             <Spline content="" scene="https://prod.spline.design/wmxzs5LVPn1oQQGq/scene.splinecode"/>
           </Flex>
         </Flex>
