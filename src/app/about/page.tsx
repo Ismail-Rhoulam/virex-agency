@@ -1,15 +1,8 @@
-import { useRef } from 'react';
 import { render } from '@/app/resources'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
-    const anchorRef = useRef();
-
-    const scrollToAnchor = () => {
-        anchorRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     const { about } = render();
     const title = about.title;
     const description = about.description;
@@ -43,14 +36,15 @@ export default function About() {
                             </Heading>
                             <IconButton
                                 size="l"
+                                href='#anchor'
                                 icon="chevronDown"
                                 variant="ghost"
-                                onClick={scrollToAnchor}
+                                onClick={() => scrollTo({behavior: 'smooth'})}
                                 />
 
                         </Flex>
 
-                        <Flex ref={anchorRef} fillWidth justifyContent='center' minHeight={80}>
+                        <Flex ref='anchor' fillWidth justifyContent='center' minHeight={80}>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
                                     <span>Lamayaaae</span>
