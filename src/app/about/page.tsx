@@ -1,4 +1,5 @@
 import { render } from '@/app/resources'
+import styles from '@/components/about/about.module.scss'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
@@ -35,10 +36,11 @@ export default function About() {
                                 </SparkleFx>
                             </Heading>
                             <IconButton
-                                icon="chevronDown"
                                 size="l"
+                                icon="chevronDown"
                                 href='#anchor'
                                 variant="ghost"
+                                className={styles.behav}
                                 />
 
                         </Flex>
