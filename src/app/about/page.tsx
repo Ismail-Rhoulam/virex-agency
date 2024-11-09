@@ -1,16 +1,13 @@
-import { useRouter } from 'next/router';
+import { useRef } from 'react';
 import { render } from '@/app/resources'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
-    const router = useRouter();
+    const anchorRef = useRef();
 
     const scrollToAnchor = () => {
-        router.push('#anchor', undefined, { scroll: true });
-        setTimeout(() => {
-            document.getElementById('anchor')?.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // Slight delay for smoother effect
+        anchorRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
     const { about } = render();
@@ -53,7 +50,7 @@ export default function About() {
 
                         </Flex>
 
-                        <Flex id='anchor' fillWidth justifyContent='center' minHeight={80}>
+                        <Flex ref={anchorRef} fillWidth justifyContent='center' minHeight={80}>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
                                     <span>Lamayaaae</span>
