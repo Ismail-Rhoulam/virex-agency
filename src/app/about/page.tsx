@@ -28,11 +28,12 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
                         <Flex alignItems='center' justifyContent='center' fillWidth>
-                            <SparkleFx>
-                                <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
-                                    Come Closer
-                                </Heading>
-                            </SparkleFx>
+                            
+                            <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
+                                <SparkleFx>
+                                    <span>Come Closer</span>
+                                </SparkleFx>
+                            </Heading>
                         </Flex>
                 </Flex>
             </Flex>
