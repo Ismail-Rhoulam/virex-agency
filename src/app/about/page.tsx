@@ -1,8 +1,18 @@
+import { useRouter } from 'next/router';
 import { render } from '@/app/resources'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
+    const router = useRouter();
+
+    const scrollToAnchor = () => {
+        router.push('#anchor', undefined, { scroll: true });
+        setTimeout(() => {
+            document.getElementById('anchor')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // Slight delay for smoother effect
+    };
+
     const { about } = render();
     const title = about.title;
     const description = about.description;
@@ -38,7 +48,7 @@ export default function About() {
                                 size="l"
                                 icon="chevronDown"
                                 variant="ghost"
-                                onClick={() => {document.getElementById('anchor')?.scrollIntoView({ behavior: 'smooth' });}}
+                                onClick={scrollToAnchor}
                                 />
 
                         </Flex>
