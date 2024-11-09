@@ -1,5 +1,4 @@
 import { render } from '@/app/resources'
-import styles from '@/components/about/about.module.scss'
 import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
@@ -40,7 +39,7 @@ export default function About() {
                                 icon="chevronDown"
                                 href='#anchor'
                                 variant="ghost"
-                                style={styles.behav}
+                                style={{scrollBehavior: 'smooth'}}
                                 />
 
                         </Flex>
