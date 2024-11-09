@@ -2,7 +2,7 @@ import { Flex, Heading, Text } from "@/ui/components";
 
 export default function NotFound() {
     return (
-        <Flex
+        <Flex zIndex="1"
             as="section"
             direction="column" alignItems="center">
             <Text
