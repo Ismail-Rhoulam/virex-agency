@@ -1,6 +1,5 @@
-import Link from 'next/link'
 import { render } from '@/app/resources'
-import { Flex, Heading, SparkleFx, Icon } from '@/ui/components';
+import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -16,10 +15,13 @@ export async function generateMetadata() {
   }
 
 export default function About() {
-    
-    
-    return (
 
+    const scrollAsabhi = function (element_id: string) {
+        const element = document.getElementById(element_id)
+        element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest"});
+    }
+
+    return (
         <Flex fillWidth paddingTop='l' paddingX='l'
             direction='column' alignItems='center' justifyContent='center' flex={1}>
             
@@ -39,9 +41,12 @@ export default function About() {
                                 <SparkleFx>
                                     <span>Come Closer</span>
                                 </SparkleFx>
-                                <Link href='#anchor' scroll={false} ><Icon name='chevronDown' /></Link>
                             </Heading>
-                            
+                            <IconButton
+                                size="l"
+                                variant="ghost"
+                                icon="chevronDown"
+                                onClick={() => scrollAsabhi('anchor')}/>
 
                         </Flex>
 
