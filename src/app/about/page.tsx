@@ -39,7 +39,7 @@ export default function About() {
                                 icon="chevronDown"
                                 href='#anchor'
                                 variant="ghost"
-                                style={{scrollBehavior: 'smooth'}}
+                                onClick={() => {document.getElementById('anchor')?.scrollIntoView({ behavior: 'smooth' });}}
                                 />
 
                         </Flex>
