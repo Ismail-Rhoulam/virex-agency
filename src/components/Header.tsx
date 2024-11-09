@@ -29,7 +29,7 @@ export const Header = () => {
                     paddingLeft="m" fillWidth
                     alignItems="center"
                     textVariant="body-default-s">
-                    <Flex hide="s"><Logo size="s" icon={false}/></Flex>
+                    <Flex></Flex>
                 </Flex>
                 <Flex fillWidth justifyContent="center">
                     <Flex
