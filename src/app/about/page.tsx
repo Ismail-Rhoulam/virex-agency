@@ -27,10 +27,10 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Flex alignItems='center'>
+                        <Flex alignItems='center' justifyContent='center' fillWidth>
                             <SparkleFx>
                                 <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
-                                    Test Test Lamyae zwina
+                                    Come Closer
                                 </Heading>
                             </SparkleFx>
                         </Flex>
