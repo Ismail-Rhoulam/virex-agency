@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { render } from '@/app/resources'
-import { Flex, Heading, SparkleFx, Scroller } from '@/ui/components';
+import { Flex, Heading, SparkleFx, Icon } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -39,8 +39,9 @@ export default function About() {
                                 <SparkleFx>
                                     <span>Come Closer</span>
                                 </SparkleFx>
+                                <Link href='#anchor'><Icon name='chevronDown' /></Link>
                             </Heading>
-                            <Scroller key='#anchor'>test</Scroller>
+                            
 
                         </Flex>
 
