@@ -27,7 +27,7 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Flex>
+                        <Flex alignItems='center'>
                             <SparkleFx>
                                 <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
                                     Test Test Lamyae zwina
