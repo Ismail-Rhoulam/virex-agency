@@ -16,7 +16,7 @@ export async function generateMetadata() {
 export default function About() {
     return (
         <Flex fillWidth paddingTop='l' paddingX='l'
-            direction='column' alignItems='center' flex={1}>
+            direction='column' alignItems='center' justifyContent='center' flex={1}>
             
             <Flex
                 position='relative'
@@ -27,7 +27,7 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Heading>Test Test Lamyae zwina</Heading>
+                        <Heading size='xl'>Test Test Lamyae zwina</Heading>
                 </Flex>
             </Flex>
         </Flex>
