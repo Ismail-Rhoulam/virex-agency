@@ -39,7 +39,7 @@ export default function About() {
                                 href='#anchor'
                                 icon="chevronDown"
                                 variant="ghost"
-                                onClick={() => scrollTo({behavior: 'smooth'})}
+                                style={{scrollBehavior: 'smooth'}}
                                 />
 
                         </Flex>
