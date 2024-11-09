@@ -7,10 +7,6 @@ export async function generateMetadata() {
     const { about } = render();
     const title = about.title;
     const description = about.description;
-    const scrollAsabhi = function (element_id: string) {
-        const element = document.getElementById(element_id)
-        element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest"});
-    }
     
     return {
       title,
@@ -19,6 +15,10 @@ export async function generateMetadata() {
   }
 
 export default function About() {
+    const scrollAsabhi = function (element_id: string) {
+        const element = document.getElementById(element_id)
+        element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest"});
+    }
     return (
         <Flex fillWidth paddingTop='l' paddingX='l'
             direction='column' alignItems='center' justifyContent='center' flex={1}>
