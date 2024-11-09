@@ -1,5 +1,5 @@
 import { render } from '@/app/resources'
-import { Flex, Grid, Logo, Text, Heading, RevealFx } from '@/ui/components';
+import { Flex, Grid, Logo, Text, Heading, SparkleFx } from '@/ui/components';
 import { about } from '../resources/content';
 
 
@@ -27,12 +27,12 @@ export default function About() {
                     as-='main'
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
-                        <Flex style={{width: 'fit-content'}}>
-                            <RevealFx>
+                        <Flex>
+                            <SparkleFx>
                                 <Heading wrap='balance' variant='display-strong-s' style={{textAlign: "center"}}>
                                     Test Test Lamyae zwina
                                 </Heading>
-                            </RevealFx>
+                            </SparkleFx>
                         </Flex>
                 </Flex>
             </Flex>
