@@ -41,7 +41,7 @@ const socials = [
     {
         name: 'Email',
         icon: 'mail',
-        link: 'mailro:contact@virex.agency'
+        link: 'mailto:contact@virex.agency'
     },
     {
         name: 'Github',
