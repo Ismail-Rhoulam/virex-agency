@@ -59,7 +59,7 @@ const IconButton = forwardRef<HTMLButtonElement, IconButtonProps | AnchorProps>(
         if (href && isAnchorLink(href)) {
             event.preventDefault();
             const targetElement = document.querySelector(href);
-            targetElement?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            targetElement?.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
         }
     };
 
