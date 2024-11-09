@@ -28,7 +28,7 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
                         
-                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '80vh'}}>
+                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '50vh'}}>
                             
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
@@ -40,7 +40,7 @@ export default function About() {
                                 icon="chevronDown"
                                 href='#anchor'
                                 variant="ghost"
-                                className={styles.behav}
+                                style={styles.behav}
                                 />
 
                         </Flex>
