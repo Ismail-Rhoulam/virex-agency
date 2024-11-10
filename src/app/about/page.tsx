@@ -41,7 +41,8 @@ export default function About() {
                             style={{minHeight: '80vh'}}> {/* Section 1 */}
 
                             <Flex
-                                paddingBottom='m'>
+                                paddingBottom='m'
+                                style={{minHeight: 85vh}}>
 
                                 <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                     <SparkleFx>
@@ -57,17 +58,7 @@ export default function About() {
                                 variant="ghost"
                                 icon="chevronDown"
                                 />
-
-                        </Flex> {/* Section 1 */}
-
-                        <Flex
-                            fillWidth
-                            direction='column' 
-                            alignItems='center' 
-                            justifyContent='center'
-                            borderStyle='solid-1'
-                            style={{minHeight: '80vh'}}> {/* Section 2 */}
-
+                            
                             <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "100vh"}}
                                 borderStyle='solid-1' direction='column' gap='24'>
 
@@ -101,8 +92,9 @@ export default function About() {
                                 </Flex>
 
                             </Flex>
-                            
-                        </Flex> {/* Section 2 */}
+
+                        </Flex> {/* Section 1 */}
+
                     </Flex>
                 </Flex>
 
