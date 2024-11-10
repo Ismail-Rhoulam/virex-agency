@@ -30,7 +30,7 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight gap='l'>
 
-                    <Flex fillHeight fillWidth>
+                    <Flex fillHeight fillWidth direction='column'>
                         <Flex
                             fillWidth
                             direction='column' 
