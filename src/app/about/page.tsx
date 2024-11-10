@@ -38,7 +38,7 @@ export default function About() {
                             alignItems='center'
                             borderStyle='solid-1'
                             justifyContent='center'
-                            style={{minHeight: '80vh'}}> {/* Section 1 */}
+                            style={{minHeight: '80vh'}} flex={1}> {/* Section 1 */}
 
                                 <Flex
                                     paddingBottom='m'>
@@ -66,7 +66,7 @@ export default function About() {
                             alignItems='center' 
                             justifyContent='center'
                             borderStyle='solid-1'
-                            style={{minHeight: '80vh'}}> {/* Section 2 */}
+                            style={{minHeight: '80vh'}} flex={1}> {/* Section 2 */}
 
                             <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "100vh"}}
                                 borderStyle='solid-1' direction='column' gap='24'>
