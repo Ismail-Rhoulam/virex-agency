@@ -67,7 +67,7 @@ export default function About() {
                         style={{minHeight: '80vh'}}> {/* Section 2 */}
 
                         <Flex id='anchor1' fillWidth justifyContent='center' alignItems='start' style={{minHeight: "85vh"}}
-                            borderStyle='solid-1'>
+                            borderStyle='solid-1' direction='column'>
 
                             <Flex
                                 style={{height: 'fit-content'}}>
