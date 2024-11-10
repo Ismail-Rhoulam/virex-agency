@@ -45,7 +45,7 @@ export default function About() {
                                 padding='160'
                                 justifyContent='center'
                                 alignItems='center'
-                                minHeight='160'
+                                style={{height: '80vh'}}
                                 >
 
                                 <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
