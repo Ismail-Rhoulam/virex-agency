@@ -42,7 +42,7 @@ export default function About() {
 
                             <Flex
                                 paddingBottom='m'
-                                style={{minHeight: 85vh}}>
+                                style={{minHeight: '85vh'}}>
 
                                 <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                     <SparkleFx>
