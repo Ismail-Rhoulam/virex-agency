@@ -35,7 +35,7 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
                         
-                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '100vh'}}>
+                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '80vh'}}>
                             
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
@@ -51,7 +51,7 @@ export default function About() {
 
                         </Flex>
 
-                        <Flex id='anchor' fillWidth justifyContent='center' minHeight={100} alignItems='center'
+                        <Flex id='anchor' fillWidth justifyContent='center' alignItems='center' style={{minHeight: 85vh}}
                             borderStyle='solid-1'>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
