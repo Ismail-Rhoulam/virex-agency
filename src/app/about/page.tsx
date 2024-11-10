@@ -66,21 +66,24 @@ export default function About() {
                         borderStyle='solid-1'
                         style={{minHeight: '80vh'}}> {/* Section 2 */}
 
-                        <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "85vh"}}
+                        <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "80vh"}}
                             borderStyle='solid-1' direction='column' gap='24'>
 
                             <Flex
                                 style={{height: 'fit-content'}}>
-                                <Heading wrap='balance' variant='display-strong-m' padding='l' style={{textAlign: "center"}}>
+                                <Heading wrap='balance' variant='display-strong-m' padding='xl' style={{textAlign: "center"}}>
                                     <SparkleFx>
                                         <span>Our Philosophy</span>
                                     </SparkleFx>
                                 </Heading>
                             </Flex>
+
                             <Flex
-                                direction='column'
                                 gap='24'
-                                >
+                                direction='column'
+                                fillHeight maxWidth='l'
+                                justifyContent='center'>
+                                    
                                 <Text
                                     paddingBottom='8'
                                     variant='body-default-xl'>
