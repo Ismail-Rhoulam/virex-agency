@@ -88,7 +88,7 @@ export default function RootLayout({
 				<Header/>
 				
 				<Flex fillWidth paddingY="l" paddingX="l"
-					justifyContent="center" flex={} zIndex={1}>
+					justifyContent="center" flex={1} zIndex={1}>
 					<Flex 
 						justifyContent="center"
 						fillWidth minHeight="0">
