@@ -40,23 +40,23 @@ export default function About() {
                             justifyContent='center'
                             style={{minHeight: '80vh'}}> {/* Section 1 */}
 
-                                <Flex
-                                    paddingBottom='m'>
+                            <Flex
+                                paddingBottom='m'>
 
-                                    <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
-                                        <SparkleFx>
-                                            <span>Get to know Us</span>
-                                        </SparkleFx>
-                                    </Heading>
+                                <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
+                                    <SparkleFx>
+                                        <span>Get to know Us</span>
+                                    </SparkleFx>
+                                </Heading>
 
-                                </Flex>
-                                
-                                <IconButton
-                                    size="l"
-                                    href='#anchor1'
-                                    variant="ghost"
-                                    icon="chevronDown"
-                                    />
+                            </Flex>
+                            
+                            <IconButton
+                                size="l"
+                                href='#anchor1'
+                                variant="ghost"
+                                icon="chevronDown"
+                                />
 
                         </Flex> {/* Section 1 */}
 
