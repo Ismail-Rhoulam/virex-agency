@@ -42,6 +42,9 @@ export default function About() {
 
                             <Flex
                                 paddingBottom='m'
+                                padding='xl'
+                                justifyContent='center'
+                                alignItems='center'
                                 >
 
                                 <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
