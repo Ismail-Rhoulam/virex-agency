@@ -89,13 +89,9 @@ export default function RootLayout({
 				
 				<Flex fillWidth paddingY="l" paddingX="l"
 					justifyContent="center" flex={1} zIndex={1}>
-					<Flex 
-						justifyContent="center"
-						fillWidth minHeight="0">
-						{children}
-						<Analytics />
-						<SpeedInsights />
-					</Flex>
+					{children}
+					<Analytics />
+					<SpeedInsights />
 				</Flex>
 
 				<Footer />

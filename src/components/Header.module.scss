@@ -13,8 +13,8 @@
 
 @media (--s) {
     .position {
-        top: 0;
-        position: sticky;
+        top: auto;
+        position: fixed;
         bottom: var(--static-space-24);
     }
 
