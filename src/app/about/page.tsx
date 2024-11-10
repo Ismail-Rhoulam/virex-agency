@@ -35,23 +35,24 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight padding='l' gap='l'>
                         
-                        <Flex direction='column' alignItems='center' justifyContent='center' fillWidth style={{minHeight: '80vh'}}>
+                        <Flex direction='column' alignItems='start' justifyContent='center' fillWidth style={{minHeight: '80vh'}}
+                            borderStyle='solid-1'>
                             
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
-                                    <span>Come Closer</span>
+                                    <span>Get to know Us</span>
                                 </SparkleFx>
                             </Heading>
                             <IconButton
                                 size="l"
-                                href='#anchor'
+                                href='#anchor1'
                                 variant="ghost"
                                 icon="chevronDown"
                                 />
 
                         </Flex>
 
-                        <Flex id='anchor' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
+                        <Flex id='anchor1' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
                             borderStyle='solid-1'>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
