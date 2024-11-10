@@ -21,7 +21,7 @@ export const Header = () => {
 
             <Flex
                 paddingTop='24'
-                as="header" zIndex={12}
+                as="header" zIndex={1000}
                 style={{height: 'fit-content'}}
                 className={styles.position} fillWidth
                 aria-hidden={false}
