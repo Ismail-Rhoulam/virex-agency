@@ -21,10 +21,13 @@ export const Footer = () => {
                 fillWidth maxWidth="m" paddingY="4" paddingX="16"
                 justifyContent="space-between" alignItems="center">
                 
-                <Text
-                    variant="body-default-s" onBackground="neutral-strong">
-                    © {currentYear} VIREX Agency, All Rights Reserved
-                </Text>
+                <Flex
+                paddingBottom='s'>
+                    <Text
+                        variant="body-default-s" onBackground="neutral-strong">
+                        © {currentYear} VIREX Agency, All Rights Reserved
+                    </Text>
+                </Flex>
 
                 <Flex
                     gap="16"
