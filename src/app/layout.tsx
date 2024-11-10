@@ -82,7 +82,7 @@ export default function RootLayout({
 						  }}/>
 				<Flex
 						fillWidth
-						minHeight="16">
+						minHeight="24">
 				</Flex>
 				
 				<Header/>
