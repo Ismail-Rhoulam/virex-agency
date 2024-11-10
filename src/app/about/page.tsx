@@ -33,7 +33,7 @@ export default function About() {
                 <Flex
                     as-='main'
                     direction='column' justifyContent='center'
-                    fillWidth fillHeight padding='l' gap='l'>
+                    fillWidth fillHeight gap='l'>
                         
                         <Flex direction='column' alignItems='start' justifyContent='center' fillWidth style={{minHeight: '80vh'}}
                             borderStyle='solid-1'>
@@ -43,6 +43,7 @@ export default function About() {
                                     <span>Get to know Us</span>
                                 </SparkleFx>
                             </Heading>
+                            
                             <IconButton
                                 size="l"
                                 href='#anchor1'
