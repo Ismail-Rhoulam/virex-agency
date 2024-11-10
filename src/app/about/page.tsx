@@ -51,7 +51,7 @@ export default function About() {
 
                         </Flex>
 
-                        <Flex id='anchor' fillWidth justifyContent='center' alignItems='center' style={{minHeight: 85vh}}
+                        <Flex id='anchor' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
                             borderStyle='solid-1'>
                             <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                 <SparkleFx>
