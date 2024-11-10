@@ -34,15 +34,15 @@ export default function About() {
 
                         <Flex
                             fillWidth
+                            fillHeight
                             direction='column' 
                             alignItems='center'
                             borderStyle='solid-1'
-                            justifyContent='center'
-                            style={{minHeight: '80vh'}}> {/* Section 1 */}
+                            justifyContent='center'>
 
                             <Flex
                                 paddingBottom='m'
-                                style={{minHeight: '85vh'}}>
+                                >
 
                                 <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                     <SparkleFx>
@@ -59,8 +59,8 @@ export default function About() {
                                 icon="chevronDown"
                                 />
                             
-                            <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "100vh"}}
-                                borderStyle='solid-1' direction='column' gap='24'>
+                            <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center'
+                                borderStyle='solid-1' direction='column' gap='24' padding='xl'>
 
                                 <Flex
                                     style={{height: 'fit-content'}}>
