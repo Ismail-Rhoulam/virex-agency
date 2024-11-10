@@ -16,14 +16,14 @@ export const Header = () => {
             <Flex
                 className={styles.mask}
                 position="fixed" zIndex={0}
-                fillWidth minHeight='104' justifyContent="center">
+                fillWidth minHeight='160' justifyContent="center">
             </Flex>
 
             <Flex
                 as="header" zIndex={10}
                 style={{height: 'fit-content'}}
                 className={styles.position} fillWidth
-                padding="8" justifyContent="center">
+                padding="16" justifyContent="center">
                 
                 <Flex
                     paddingLeft="m" fillWidth
