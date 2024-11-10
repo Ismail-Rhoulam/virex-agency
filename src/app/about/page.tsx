@@ -35,14 +35,22 @@ export default function About() {
                     direction='column' justifyContent='center'
                     fillWidth fillHeight gap='l'>
                         
-                        <Flex direction='column' alignItems='start' justifyContent='center' fillWidth style={{minHeight: '80vh'}}
-                            borderStyle='solid-1'>
+                        <Flex 
+                            fillWidth
+                            direction='column' 
+                            alignItems='center' 
+                            justifyContent='center'
+                            borderStyle='solid-1'
+                            style={{minHeight: '80vh'}}>
                             
-                            <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
-                                <SparkleFx>
-                                    <span>Get to know Us</span>
-                                </SparkleFx>
-                            </Heading>
+                            <Flex
+                                paddingBottom='m'>
+                                <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
+                                    <SparkleFx>
+                                        <span>Get to know Us</span>
+                                    </SparkleFx>
+                                </Heading>
+                            </Flex>
                             
                             <IconButton
                                 size="l"
@@ -73,9 +81,13 @@ export default function About() {
                                     </SparkleFx>
                                 </Heading>
                             </Flex>
+
                     </Flex>
+
                 </Flex>
+
             </Flex>
+
         </Flex>
     )
 };
