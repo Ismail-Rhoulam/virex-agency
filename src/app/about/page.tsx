@@ -27,7 +27,7 @@ export default function About() {
             
             <Flex
                 position='relative'
-                as="section" overflow='hidden'
+                as="section" overflow='hidden' style={{minHeight: '85vh'}}
                 fillWidth direction='column' alignItems='center' flex={1}>
                 
                 <Flex
@@ -53,15 +53,27 @@ export default function About() {
 
                         </Flex>
 
-                        <Flex id='anchor1' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
-                            borderStyle='solid-1'>
-                            <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
-                                <SparkleFx>
-                                    <span>Let's see what we got here</span>
-                                </SparkleFx>
-                            </Heading>
-                        </Flex>
+                </Flex>
 
+                <Flex
+                position='relative'
+                as="section" overflow='hidden' style={{minHeight: '85vh'}}
+                fillWidth direction='column' alignItems='center' flex={1}>
+                
+                    <Flex
+                        as-='main'
+                        direction='column' justifyContent='center'
+                        fillWidth fillHeight gap='l'>
+                            
+                            <Flex id='anchor1' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
+                                borderStyle='solid-1'>
+                                <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
+                                    <SparkleFx>
+                                        <span>Let's see what we got here</span>
+                                    </SparkleFx>
+                                </Heading>
+                            </Flex>
+                    </Flex>
                 </Flex>
             </Flex>
         </Flex>
