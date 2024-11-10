@@ -1,5 +1,5 @@
 import { render } from '@/app/resources'
-import { Flex, Heading, SparkleFx, IconButton } from '@/ui/components';
+import { Flex, Heading, SparkleFx, Text, IconButton } from '@/ui/components';
 
 
 export async function generateMetadata() {
@@ -66,14 +66,29 @@ export default function About() {
                         borderStyle='solid-1'
                         style={{minHeight: '80vh'}}> {/* Section 2 */}
 
-                        <Flex id='anchor1' fillWidth justifyContent='center' alignItems='center' style={{minHeight: "85vh"}}
+                        <Flex id='anchor1' fillWidth justifyContent='center' alignItems='start' style={{minHeight: "85vh"}}
                             borderStyle='solid-1'>
 
-                            <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
-                                <SparkleFx>
-                                    <span>Let's see what we got here</span>
-                                </SparkleFx>
-                            </Heading>
+                            <Flex
+                                style={{height: 'fit-content'}}>
+                                <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
+                                    <SparkleFx>
+                                        <span>Let's see what we got here</span>
+                                    </SparkleFx>
+                                </Heading>
+                            </Flex>
+                            <Flex
+                                direction='row'
+                                >
+                                <Text
+                                    paddingBottom='8'>
+                                    VIREX Agency is a versatile agency that combines marketing, production, and communication expertise to create dynamic and adaptable solutions that resonate with your audience. No matter your industry or vision, VIREX is equipped to amplify your voice and craft stories that make a lasting impression.
+                                </Text>
+                                <Text
+                                    paddingBottom='8'>
+                                    At the heart of Virex Agency lies the belief that collaboration fuels success. We work closely with our clients, aligning our creative vision with their business objectives to produce results that make a lasting impact. Every project is treated with care, ensuring that the final product reflects both your brand’s essence and our commitment to excellence.
+                                </Text>
+                            </Flex>
 
                         </Flex>
                         
