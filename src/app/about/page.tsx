@@ -22,7 +22,7 @@ export default function About() {
             
             <Flex
                 position='relative'
-                as="section" overflow='hidden' style={{minHeight: '85vh'}}
+                as="section" overflow='hidden' style={{minHeight: '100vh'}}
                 fillWidth direction='column' alignItems='center' flex={1}>
                 
                 <Flex
