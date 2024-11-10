@@ -31,12 +31,13 @@ export default function About() {
                     fillWidth fillHeight gap='l'>
 
                     <Flex fillHeight fillWidth direction='column'>
+
                         <Flex
                             fillWidth
                             direction='column' 
-                            alignItems='center' 
-                            justifyContent='center'
+                            alignItems='center'
                             borderStyle='solid-1'
+                            justifyContent='center'
                             style={{minHeight: '80vh'}}> {/* Section 1 */}
 
                                 <Flex
@@ -67,7 +68,7 @@ export default function About() {
                             borderStyle='solid-1'
                             style={{minHeight: '80vh'}}> {/* Section 2 */}
 
-                            <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "75vh"}}
+                            <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "100vh"}}
                                 borderStyle='solid-1' direction='column' gap='24'>
 
                                 <Flex
@@ -86,11 +87,13 @@ export default function About() {
                                     justifyContent='center'>
 
                                     <Text
+                                        align='center'
                                         paddingBottom='8'
                                         variant='body-default-xl'>
                                         VIREX Agency is a versatile agency that combines marketing, production, and communication expertise to create dynamic and adaptable solutions that resonate with your audience. No matter your industry or vision, VIREX is equipped to amplify your voice and craft stories that make a lasting impression.
                                     </Text>
                                     <Text
+                                        align='centersa'
                                         paddingBottom='8'
                                         variant='body-default-xl'>
                                         At the heart of Virex Agency lies the belief that collaboration fuels success. We work closely with our clients, aligning our creative vision with their business objectives to produce results that make a lasting impact. Every project is treated with care, ensuring that the final product reflects both your brand’s essence and our commitment to excellence.
