@@ -66,7 +66,7 @@ export default function About() {
                         borderStyle='solid-1'
                         style={{minHeight: '80vh'}}> {/* Section 2 */}
 
-                        <Flex id='anchor1' fillWidth justifyContent='center' alignItems='start' style={{minHeight: "85vh"}}
+                        <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center' style={{minHeight: "85vh"}}
                             borderStyle='solid-1' direction='column'>
 
                             <Flex
