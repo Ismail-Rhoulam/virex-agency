@@ -21,9 +21,10 @@ export const Header = () => {
 
             <Flex
                 paddingTop='24'
-                as="header" zIndex={10}
+                as="header" zIndex={1}
                 style={{height: 'fit-content'}}
                 className={styles.position} fillWidth
+                aria-hidden={false}
                 paddingX="8" paddingBottom="8" justifyContent="center">
                 
                 <Flex
