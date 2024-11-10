@@ -37,7 +37,6 @@ export default function About() {
                             fillHeight
                             direction='column' 
                             alignItems='center'
-                            borderStyle='solid-1'
                             justifyContent='center'>
 
                             <Flex
@@ -65,7 +64,7 @@ export default function About() {
                                 />
                             
                             <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center'
-                                borderStyle='solid-1' direction='column' gap='24' padding='xl' margin='xl'>
+                                direction='column' gap='24' padding='xl' margin='xl'>
 
                                 <Flex
                                     style={{height: 'fit-content'}}>
@@ -95,10 +94,16 @@ export default function About() {
                                         At the heart of Virex Agency lies the belief that collaboration fuels success. We work closely with our clients, aligning our creative vision with their business objectives to produce results that make a lasting impact. Every project is treated with care, ensuring that the final product reflects both your brand’s essence and our commitment to excellence.
                                     </Text>
                                 </Flex>
-
+                                <IconButton
+                                    size="l"
+                                    href='#anchor'
+                                    variant="ghost"
+                                    icon="chevronDown"
+                                    />
                             </Flex>
+
                             <Flex id='anchor' fillWidth justifyContent='start' alignItems='center'
-                                borderStyle='solid-1' direction='column' gap='24' padding='xl'>
+                                direction='column' gap='24' padding='xl'>
 
                                 <Flex
                                     style={{height: 'fit-content'}}>
