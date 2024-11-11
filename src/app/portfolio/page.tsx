@@ -14,7 +14,6 @@ export async function generateMetadata() {
 
 export default function Portfolio() {
     return (
-<<<<<<< HEAD
         <Flex fillWidth justifyContent="center">
           <Text>Portfolio</Text>
         </Flex>
