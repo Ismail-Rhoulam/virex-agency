@@ -17,4 +17,5 @@ export default function Portfolio() {
         <Flex fillWidth justifyContent="center">
           <Text>Portfolio</Text>
         </Flex>
+    )
 };
