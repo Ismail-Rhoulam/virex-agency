@@ -1,6 +1,5 @@
 import { render } from '@/app/resources';
 import { Flex, Text } from '@/ui/components';
-import Spline from '@splinetool/react-spline/next';
 
 export async function generateMetadata() {
     const { portfolio } = render();
