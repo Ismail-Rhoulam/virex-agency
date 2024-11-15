@@ -8,6 +8,7 @@ import { Header, Footer } from "@/components";
 import { Flex, Background} from '@/ui/components';
 import { Source_Code_Pro } from 'next/font/google';
 import { Analytics } from "@vercel/analytics/react";
+import { PartBackround } from "@/components";
 import { Sora, Raleway, Work_Sans } from "next/font/google";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -68,8 +69,8 @@ export default function RootLayout({
 				as="body"
 				direction="column"
 				fillWidth fillHeight margin="0" padding="0">
-
-				<Background
+				<PartBackround />
+				{/* <Background
 						mask="cursor"
 						gradient={{
 							display: true
@@ -79,7 +80,8 @@ export default function RootLayout({
 						  }}
 						lines={{
 							display: true
-						  }}/>
+						  }}/> */}
+				
 				<Flex
 						fillWidth
 						minHeight="16">
