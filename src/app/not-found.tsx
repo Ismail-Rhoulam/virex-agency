@@ -15,8 +15,7 @@ export default function NotFound() {
                 variant="display-strong-xs">
                 Page Not Found
             </Heading>
-            <Text
-                onBackground="neutral-weak">
+            <Text>
                 The page you are looking for does not exist.
             </Text>
         </Flex>
