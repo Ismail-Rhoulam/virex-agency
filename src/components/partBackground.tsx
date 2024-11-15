@@ -1,7 +1,7 @@
 // components/ParticlesBackground.tsx
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import loadFull from "@tsparticles/react";
 
 const PartBackground = () => {
   const particlesInit = useCallback(async (engine: any) => {
