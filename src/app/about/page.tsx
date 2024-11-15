@@ -47,7 +47,7 @@ export default function About() {
                                 paddingX='160'
                                 margin='160'
                                 >
-                                <Flex padding='xl'>
+                                <Flex padding='l'>
                                     <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                         <SparkleFx>
                                             <span>Get to know Us</span>

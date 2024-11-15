@@ -1,3 +1,4 @@
+import React from "react";
 import { render } from '@/app/resources';
 import { Flex, Text } from '@/ui/components';
 
@@ -13,8 +14,8 @@ export async function generateMetadata() {
 
 export default function Portfolio() {
     return (
-        <Flex fillWidth justifyContent="center">
-          <Text>Portfolio</Text>
+        <Flex fillWidth justifyContent="center" alignItems="center">
+          <Text>HAhaha</Text>
         </Flex>
     )
 };

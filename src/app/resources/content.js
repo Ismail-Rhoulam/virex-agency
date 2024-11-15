@@ -1,45 +1,25 @@
 const home = {
     label: 'Home',
     title: 'VIREX Agency',
-    description: "VIREX Agency's storefront website",
-    content: {
-        en: {},
-        fr: {},
-        ar: {}
-    }
+    description: "VIREX Agency's storefront website"
 }
 
 const about = {
     label: 'About',
     title: 'About Us',
-    description: "Get to know VIREX Agency",
-    content: {
-        en: {},
-        fr: {},
-        ar: {}
-    }
+    description: "Get to know VIREX Agency"
 }
 
 const services = {
     label: 'Services',
     title: 'Our Services',
-    description: "VIREX Agency added value",
-    content: {
-        en: {},
-        fr: {},
-        ar: {}
-    }
+    description: "VIREX Agency added value"
 }
 
 const portfolio = {
     label: 'Portfolio',
     title: 'Our Portfolio',
-    description: "VIREX Agency's Portfolio",
-    content: {
-        en: {},
-        fr: {},
-        ar: {}
-    }
+    description: "VIREX Agency's Portfolio"
 }
 
 const socials = [
