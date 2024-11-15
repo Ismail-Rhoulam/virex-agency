@@ -75,7 +75,7 @@ export default function RootLayout({
 							display: true
 						  }}
 						dots={{
-							display: true
+							display: false
 						  }}
 						lines={{
 							display: true
