@@ -48,7 +48,7 @@ export default function Home() {
 
             <Flex
               position="relative"
-              flex={4} gap="24" marginBottom="104"
+              flex={4} gap='32' marginBottom="104"
               direction="column">
               
               <InlineCode
