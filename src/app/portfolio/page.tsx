@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback } from "react";
 import { render } from '@/app/resources';
 import Particles from "react-tsparticles";
