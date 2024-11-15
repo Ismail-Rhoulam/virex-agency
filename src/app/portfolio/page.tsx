@@ -1,7 +1,7 @@
 import { useCallback } from "react";
-import { loadFull } from "tsparticles";
 import { render } from '@/app/resources';
 import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import { Flex, Text } from '@/ui/components';
 import type { Container, Engine } from "tsparticles-engine";
 
@@ -18,7 +18,7 @@ export async function generateMetadata() {
 export default function Portfolio() {
     const particlesInit = useCallback(async (engine: Engine) => {
       console.log(engine);
-      await loadFull(engine);
+      await loadSlim(engine);
     }, []);
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
       await console.log(container);
