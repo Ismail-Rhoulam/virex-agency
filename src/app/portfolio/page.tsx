@@ -1,5 +1,3 @@
-'use client';
-
 import React from "react";
 import { render } from '@/app/resources';
 import { Flex, Text } from '@/ui/components';
