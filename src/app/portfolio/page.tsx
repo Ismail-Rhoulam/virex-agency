@@ -1,5 +1,9 @@
+import { useCallback } from "react";
+import { loadFull } from "tsparticles";
 import { render } from '@/app/resources';
+import Particles from "react-tsparticles";
 import { Flex, Text } from '@/ui/components';
+import type { Container, Engine } from "tsparticles-engine";
 
 export async function generateMetadata() {
     const { portfolio } = render();
@@ -12,9 +16,16 @@ export async function generateMetadata() {
   }
 
 export default function Portfolio() {
+    const particlesInit = useCallback(async (engine: Engine) => {
+      console.log(engine);
+      await loadFull(engine);
+    }, []);
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
+      await console.log(container);
+  }, []);
     return (
         <Flex fillWidth justifyContent="center">
-          <Text>Portfolio</Text>
+          <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
         </Flex>
     )
 };
