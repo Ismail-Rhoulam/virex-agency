@@ -1,11 +1,9 @@
-import { home, about, services, portfolio, socials } from './content';
+import { home, about, socials } from './content';
 
 const render = () => {
     return {
         home,
         about,
-        services,
-        portfolio,
         socials
     }
 };

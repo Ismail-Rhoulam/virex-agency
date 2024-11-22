@@ -50,4 +50,4 @@ const socials = [
     }
 ]
 
-export { home, about, services, portfolio, socials };
+export { home, about, socials };
