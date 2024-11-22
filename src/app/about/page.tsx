@@ -39,7 +39,7 @@ export default function About() {
                             alignItems='center'
                             justifyContent='center'>
                             
-                            <Flex direction='row' padding='l' mobileDirection='column' show='s'>
+                            <Flex direction='row' padding='m' mobileDirection='column' show='s'>
                                 <Flex padding='xl' margin='xl'></Flex>
                                 <Flex padding='xl' margin='xl'></Flex>
                             </Flex>
