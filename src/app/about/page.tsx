@@ -39,12 +39,13 @@ export default function About() {
                             alignItems='center'
                             justifyContent='center'>
                             
-                            <Flex direction='row' padding='m' mobileDirection='column' show='s'>
+                            <Flex direction='row' padding='l' mobileDirection='column' show='s'>
                                 <Flex padding='xl' margin='xl'></Flex>
                                 <Flex padding='xl' margin='xl'></Flex>
+                                <Flex padding='l' margin='l'></Flex>
                             </Flex>
 
-                            <Flex direction='column' margin="l" padding='xl' hide='s'>
+                            <Flex direction='column' margin="l" padding='l' hide='s'>
                                 <Flex padding='m' margin='m'></Flex>
                             </Flex>
 
