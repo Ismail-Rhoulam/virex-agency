@@ -17,7 +17,7 @@ export async function generateMetadata() {
 export default function About() {
 
     return (
-        <Flex fillWidth paddingTop='m' paddingX='l'
+        <Flex fillWidth paddingTop='m' paddingX='s'
             direction='column' alignItems='center' justifyContent='center'>
             
             <Flex
@@ -38,16 +38,24 @@ export default function About() {
                             direction='column' 
                             alignItems='center'
                             justifyContent='center'>
+                            
+                            <Flex direction='row' padding='l' mobileDirection='column' show='s'>
+                                <Flex padding='xl' margin='xl'></Flex>
+                                <Flex padding='xl' margin='xl'></Flex>
+                                <Flex padding='l' margin='l'></Flex>
+                            </Flex>
+
+                            <Flex direction='column' margin="l" padding='xl' hide='s'>
+                                <Flex padding='m' margin='m'></Flex>
+                            </Flex>
 
                             <Flex
                                 paddingBottom='m'
-                                padding='160'
                                 justifyContent='center'
                                 alignItems='center'
-                                paddingX='160'
-                                margin='160'
                                 >
-                                <Flex padding='l'>
+                                
+                                <Flex paddingTop='xl'>
                                     <Heading wrap='balance' variant='display-strong-l' style={{textAlign: "center"}}>
                                         <SparkleFx>
                                             <span>Get to know Us</span>
@@ -62,7 +70,18 @@ export default function About() {
                                 variant="ghost"
                                 icon="chevronDown"
                                 />
-                            
+
+                            <Flex direction='column' padding='xl' show="s">
+                                <Flex padding='xl' margin='xl'></Flex>
+                                <Flex padding='xl' margin='xl'></Flex>
+                            </Flex>
+
+
+                            <Flex direction='column' margin='l' padding='l'>
+                                <Flex padding='m' margin='m'></Flex>
+                                <Flex padding='m' margin='m'></Flex>
+                            </Flex>
+
                             <Flex id='anchor1' fillWidth justifyContent='start' alignItems='center'
                                 direction='column' gap='24' padding='xl' margin='xl'>
 
@@ -139,6 +158,7 @@ export default function About() {
                                         <Text variant='body-strong-xl'>Excellence:</Text> We believe in delivering nothing short of the best. Our focus on quality ensures that every project is executed to perfection.
                                     </Text>
                                 </Flex>
+                                <Flex paddingBottom='s' show='s'></Flex>
 
                             </Flex>
 

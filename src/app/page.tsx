@@ -32,12 +32,14 @@ export default function Home() {
         <Flex
           as="main"
           direction="column" justifyContent="center"
-          fillWidth fillHeight padding="l" gap="l">
+          fillWidth fillHeight paddingX="l" gap="l">
 
           <Flex
             mobileDirection="column"
-            fillWidth gap="24">
+            fillWidth gap="24" overflow='hidden'>
             
+            <Flex padding='xl' show="s"></Flex>
+
             <Flex
               position="relative"
               flex={2} paddingTop="56" paddingX="xl">
