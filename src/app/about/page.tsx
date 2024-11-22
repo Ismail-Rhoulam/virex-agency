@@ -17,7 +17,7 @@ export async function generateMetadata() {
 export default function About() {
 
     return (
-        <Flex fillWidth paddingTop='l' paddingX='l'
+        <Flex fillWidth paddingTop='m' paddingX='l'
             direction='column' alignItems='center' justifyContent='center'>
             
             <Flex
