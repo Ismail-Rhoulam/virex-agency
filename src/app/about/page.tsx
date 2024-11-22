@@ -42,7 +42,6 @@ export default function About() {
                             <Flex direction='row' padding='l' mobileDirection='column' show='s'>
                                 <Flex padding='xl' margin='xl'></Flex>
                                 <Flex padding='xl' margin='xl'></Flex>
-                                <Flex padding='l' margin='l'></Flex>
                             </Flex>
 
                             <Flex direction='column' margin="l" padding='xl' hide='s'>
