@@ -3,13 +3,13 @@
 import React from "react";
 import { usePathname } from 'next/navigation'
 import { routes, render } from "@/app/resources";
-import { Flex, Logo, ToggleButton } from "@/ui/components";
+import { Flex, ToggleButton } from "@/ui/components";
 import styles from './Header.module.scss'
 
 export const Header = () => {
 
     const pathname = usePathname() ?? '';
-    const { home, about, services, portfolio } = render();
+    const { home, about } = render();
 
     return (
         <>
@@ -56,24 +56,6 @@ export const Header = () => {
                                     prefixIcon="person"
                                     selected={pathname === '/about'}>
                                     <Flex paddingX="2" hide="s">{about.label}</Flex>
-                                </ToggleButton>
-                            )}
-                            { routes['/services'] && (
-                                <ToggleButton
-                                    href="/services"
-                                    size="m"
-                                    prefixIcon="grid"
-                                    selected={pathname === '/services'}>
-                                    <Flex paddingX="2" hide="s">{services.label}</Flex>
-                                </ToggleButton>
-                            )}
-                            { routes['/porfolio'] && (
-                                <ToggleButton
-                                    href="/portfolio"
-                                    size="m"
-                                    prefixIcon="gallery"
-                                    selected={pathname === '/portfolio'}>
-                                    <Flex paddingX="2" hide="s">{portfolio.label}</Flex>
                                 </ToggleButton>
                             )}
                         </Flex>
